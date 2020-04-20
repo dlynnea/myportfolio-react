@@ -28,7 +28,7 @@ header {
   border-bottom: 1px solid #999;
   padding: 0 15px;
   z-index: 10;
-  background-color: white;
+  background-color: $off-white;
   color: $color-text;
 
   .brand-name {
@@ -122,9 +122,9 @@ header .navbar ul {
     .block {
       flex: 0 0 75%;
       max-width: 75%;
-      padding-left: 35px;
+      padding-left: 25px;
       border-left: 1px solid #fff;
-      margin-top: 50px;
+      margin-top: 300px;
 
       h6 {
         color: $light-text;
@@ -199,14 +199,14 @@ header .navbar ul {
       }
 
       span {
-        color: #febd01;
+        color: $accent-text;
       }
 
       p {
         font-size: 15px;
         font-weight: 400;
         line-height: 24px;
-        color: #838383;
+        color: $para-text;
         margin: 0 0 20px;
       }
 
@@ -252,7 +252,7 @@ header .navbar ul {
           margin-top: 10px;
           display: flex;
           flex-wrap: wrap;
-          border-bottom: 1px solid #838383;
+          border-bottom: 1px solid $para-text;
           padding-bottom: 10px;
 
           label {
@@ -267,7 +267,7 @@ header .navbar ul {
             font-size: 15px;
             font-weight: 400;
             line-height: 24px;
-            color: #838383;
+            color: $para-text;
           }
         }
       }
@@ -306,7 +306,7 @@ header .navbar ul {
         left: 0;
         right: 30%;
         height: 2px;
-        background-color: #febd01;
+        background-color: $accent-text;
         bottom: 0;
       }
     }
@@ -314,7 +314,7 @@ header .navbar ul {
     p.small {
       display: block;
       font-size: 14px;
-      color: #838383;
+      color: $para-text;
       font-weight: 400;
       letter-spacing: 2px;
     }
