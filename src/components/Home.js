@@ -13,7 +13,7 @@ export const Home = () => {
                             <h1>Dani Matton</h1>
                             <h3>Web Developer</h3>
                             <div className="cv-btn">
-                                <Link to="/">Download CV</Link>
+                                <Link to="/" className="btn">Download CV</Link>
                             </div>
                         </div>
                     </div>

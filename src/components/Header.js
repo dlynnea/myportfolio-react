@@ -12,7 +12,7 @@ export function Header() {
                 <div className="navbar">
                     <ul>
                         <li>
-                            <Link className="link" to="/">Home</Link>
+                            <Link className="link active" to="/">Home</Link>
                         </li>
                         <li>
                             <Link className="link" to="/">About</Link>

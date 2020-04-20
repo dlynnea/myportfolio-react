@@ -12,9 +12,11 @@ $font-family: 'Poppins', sans-serif;
 
 body {
   font-family: $font-family;
+  margin: 0;
 }
 
 .container {
+  max-width: 1140px;
   margin: auto;
 }
 
@@ -29,6 +31,7 @@ header {
   right: 0;
   border-bottom: 1px solid #999;
   padding: 0 15px;
+  z-index: 10;
 
   .brand-name {
     font-size: 22px;
@@ -38,66 +41,73 @@ header {
     // position: absolute;
     left: 0;
     bottom: 0;
-  }
 
-  .brand-name .link {
-    font-size: 22px;
-    font-weight: 600;
-    color: #fff;
-    text-transform: uppercase;
-  }
+    .link {
+      font-size: 22px;
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase;
+      position: relative;
 
-  .brand-name .link::before {
-    content: '';
-    height: 3px;
-    background-color: #fff;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-
-  .row {
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .navbar {
-    // background-color: #402a4e;
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-
-      li {
-        display: inline-block;
-        margin-left: 35px;
-
-        .link {
-          font-size: 15px;
-          text-decoration: none;
-          line-height: 72px;
-          color: #fff;
-          font-weight: 600;
-          position: relative;
-          display: block;
-
-          /* add an active line on bottom of selected link */
-          &-active::before {
-            content: '';
-            height: 3px;
-            background-color: #fff;
-            width: 100%;
-            position: absolute;
-            left: 0;
-            top: 100%;
-            bottom: -1px;
-          }
-        }
-      }
+      // &-::before {
+      //   content: '';
+      //   height: 3px;
+      //   background-color: #fff;
+      //   width: 100%;
+      //   position: absolute;
+      //   left: 0;
+      //   bottom: 0;
+      // }
     }
   }
+}
+header .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .navbar ul{
+  // background-color: #402a4e;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .navbar ul li {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+header .navbar ul li .link {
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 72px;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  display: block;
+}
+
+header .navbar ul li .link::before {
+  content: '';
+  height: 3px;
+  background-color: #fff;
+  width: 0%;
+  position: absolute;
+  right: 0;
+  // top: 100%;
+  bottom: -1px;
+  transition: all .5s ease;
+}
+
+header .navbar ul li .link:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+header .navbar ul li .link.active::before {
+  width: 100%;
+  left: 0;
 }
 
 .home {
@@ -105,24 +115,68 @@ header {
   background-image: url('images/purple.jpg');
   background-size: cover;
   background-position: center;
-
-  .full-screen {
+  padding: 15px;
+}
+.home .full-screen {
     background-color: #999;
     min-height: 100vh;
+}
+
+.home .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.home .home-content .block {
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding-left: 35px;
+  border-left: 1px solid #fff;
+  margin-top: 50px;
+
+  h6 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
   }
 
-  .home-content {
-    background-color: blue;
-    flex: 0 0 100%;
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+  h1 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+  }
 
-    .block {
-      background-color: red;
-      flex: 0 0 75%;
-      max-width: 75%;
-    }
+  h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.cv-btn .btn {
+  border-radius: 4px;
+  padding-top: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 25px;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all .8s ease;
+  background-color: transparent;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
   }
 }
