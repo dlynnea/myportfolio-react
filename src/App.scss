@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+$main-font: 'Raleway', sans-serif;
+$font-family: 'Poppins', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+}
+
+.container {
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #999;
+  padding: 0 15px;
+
+  .brand-name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    // position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .brand-name .link {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .brand-name .link::before {
+    content: '';
+    height: 3px;
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .row {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar {
+    // background-color: #402a4e;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        margin-left: 35px;
+
+        .link {
+          font-size: 15px;
+          text-decoration: none;
+          line-height: 72px;
+          color: #fff;
+          font-weight: 600;
+          position: relative;
+          display: block;
+
+          /* add an active line on bottom of selected link */
+          &-active::before {
+            content: '';
+            height: 3px;
+            background-color: #fff;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            bottom: -1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.home {
+  min-height: 100vh;
+  background-image: url('images/purple.jpg');
+  background-size: cover;
+  background-position: center;
+
+  .full-screen {
+    background-color: #999;
+    min-height: 100vh;
+  }
+
+  .home-content {
+    background-color: blue;
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .block {
+      background-color: red;
+      flex: 0 0 75%;
+      max-width: 75%;
+    }
+  }
+}
