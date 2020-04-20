@@ -284,43 +284,119 @@ header .navbar ul {
       }
     }
   }
+}
 
-  .section-title {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 40px;
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
 
-    h1 {
-      display: inline-block;
-      font-size: 35px;
-      text-transform: uppercase;
-      font-weight: 700;
-      margin: 0 0 10px;
-      color: $dark-text;
-      position: relative;
-      padding-bottom: 0;
+  h1 {
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: $dark-text;
+    position: relative;
+    padding-bottom: 0;
 
-      &:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 30%;
-        height: 2px;
-        background-color: $accent-text;
-        bottom: 0;
-      }
-    }
-
-    p.small {
-      display: block;
-      font-size: 14px;
-      color: $para-text;
-      font-weight: 400;
-      letter-spacing: 2px;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 30%;
+      height: 2px;
+      background-color: $accent-text;
+      bottom: 0;
     }
   }
+
+  p.small {
+    display: block;
+    font-size: 14px;
+    color: $para-text;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
 }
+
+.text-center {
+  text-align: center!important;
+}
+
+.text-left {
+  text-align: left!important;
+}
+
+.text-right {
+  text-align: right!important;
+}
+
 
 .text-uppercase {
   text-transform: uppercase!important;
+}
+
+.services {
+  padding: 100px 0 70px;
+
+  .section-title h1:before {
+    left: 30%;
+  }
+
+  .service-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .box {
+    background-color: #fff;
+    padding: 30px;
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      content: '';
+      height: 2px;
+      background-color: $accent-text;
+      position: absolute;
+      bottom: 0;
+      width: 50px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    h5 {
+      font-size: 16px;
+      font-weight: 600;
+      color: $dark-text;
+      margin: 0;
+
+    }
+
+    .icon {
+      height: 60px;
+      width: 60px;
+      background-color: $accent-text;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      text-align: center;
+      
+      .fa {
+        font-size: 24px;
+        color: $light-text;
+        line-height: 60px;
+      }
+    }
+  }
 }
