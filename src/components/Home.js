@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 export const Home = () => {
@@ -11,9 +11,9 @@ export const Home = () => {
                         <div className="block">
                             <h6>Hello, My Name is</h6>
                             <h1>Dani Matton</h1>
-                            <h3>Web Developer</h3>
+                            <h3>Web Developer, Designer, Full Stack Engineer</h3>
                             <div className="cv-btn">
-                                <Link to="/" className="btn">Download CV</Link>
+                                <Link to="/">Download CV</Link>
                             </div>
                         </div>
                     </div>

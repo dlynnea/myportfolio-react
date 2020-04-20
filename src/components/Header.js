@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export function Header() {
     return (
@@ -12,22 +12,22 @@ export function Header() {
                 <div className="navbar">
                     <ul>
                         <li>
-                            <Link className="link active" to="/">Home</Link>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <Link className="link" to="/">About</Link>
+                            <Link to="/about">About</Link>
                         </li>
                         <li>
-                            <Link className="link" to="/">Services</Link>
+                            <Link to="/services">Services</Link>
                         </li>
                         <li>
-                            <Link className="link" to="/">Portfolio</Link>
+                            <Link to="/portfolio">Portfolio</Link>
                         </li>
                         <li>
-                            <Link className="link" to="/">Blog</Link>
+                            <Link to="/blog">Blog</Link>
                         </li>
                         <li>
-                            <Link className="link" to="/">Contact</Link>
+                            <Link to="/contact">Contact</Link>
                         </li>
                     </ul>
                     </div>
