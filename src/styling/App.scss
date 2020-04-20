@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
-
-$main-font: 'Raleway', sans-serif;
-$font-family: 'Poppins', sans-serif;
+@import 'config';
 
 * {
   margin: 0;
@@ -32,11 +28,13 @@ header {
   border-bottom: 1px solid #999;
   padding: 0 15px;
   z-index: 10;
+  background-color: white;
+  color: $color-text;
 
   .brand-name {
     font-size: 22px;
     font-weight: 600;
-    color: #fff;
+    color: $dark-text;
     text-transform: uppercase;
     // position: absolute;
     left: 0;
@@ -45,7 +43,7 @@ header {
     a {
       font-size: 22px;
       font-weight: 600;
-      color: #fff;
+      color: $dark-text;
       text-transform: uppercase;
       position: relative;
       text-decoration: none;
@@ -59,7 +57,7 @@ header .row {
 }
 
 header .navbar ul {
-  // background-color: #402a4e;
+  // background-color: $color-text;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -72,7 +70,7 @@ header .navbar ul {
       font-size: 15px;
       text-decoration: none;
       line-height: 72px;
-      color: #fff;
+      color: $color-text;
       font-weight: 600;
       position: relative;
       display: block;
@@ -80,7 +78,7 @@ header .navbar ul {
       &::before {
         content: '';
         height: 3px;
-        background-color: #fff;
+        background-color: $light-text;
         width: 0%;
         position: absolute;
         right: 0;
@@ -104,7 +102,7 @@ header .navbar ul {
 
 .home {
   min-height: 100vh;
-  background-image: url('images/purple.jpg');
+  background-image: url('../images/purple.jpg');
   background-size: cover;
   background-position: center;
   padding: 15px;
@@ -129,7 +127,7 @@ header .navbar ul {
       margin-top: 50px;
 
       h6 {
-        color: #fff;
+        color: $light-text;
         font-size: 18px;
         font-weight: 500;
         margin: 0;
@@ -137,7 +135,7 @@ header .navbar ul {
       }
 
       h1 {
-        color: #fff;
+        color: $light-text;
         font-size: 70px;
         font-weight: 600;
         margin: 0;
@@ -145,7 +143,7 @@ header .navbar ul {
       }
 
       h3 {
-        color: #fff;
+        color: $light-text;
         font-size: 25px;
         font-weight: 500;
         margin: 0;
@@ -158,7 +156,7 @@ header .navbar ul {
 .cv-btn a {
   border-radius: 4px;
   padding-top: 20px;
-  color: #fff;
+  color: $light-text;
   border: 1px solid #fff;
   padding: 12px 25px;
   display: inline-block;
@@ -170,14 +168,14 @@ header .navbar ul {
   text-decoration: none;
 
   &:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: $light-text;
+    color: $dark-text;
   }
 }
 
 .about {
   padding: 100px 15px;
-  background-color: #fff;
+  background-color: $light-text;
 
   .about-content {
 
@@ -190,14 +188,14 @@ header .navbar ul {
         font-size: 25px;
         font-weight: 600;
         margin: 0 0 5px;
-        color: #000;
+        color: $dark-text;
       }
 
       h6 {
         font-size: 18px;
         font-weight: 500;
         margin: 0 0 5px;
-        color: #000;
+        color: $dark-text;
       }
 
       span {
@@ -219,7 +217,7 @@ header .navbar ul {
           height: 30px;
           width: 30px;
           border-radius: 3px;
-          background-color: #000;
+          background-color: $dark-text;
           display: inline-block;
           text-align: center;
           border: 1px solid #000;
@@ -231,12 +229,12 @@ header .navbar ul {
             background-color: transparent;
 
             .fab {
-              color: #000;
+              color: $dark-text;
             }
           }
 
           .fab {
-            color: #fff;
+            color: $light-text;
             font-size: 16px;
             transition: all .5s ease;
           }
@@ -259,7 +257,7 @@ header .navbar ul {
 
           label {
             padding-right: 10px;
-            color: #000;
+            color: $dark-text;
             font-weight: 600;
             font-size: 15px;
           }
@@ -298,7 +296,7 @@ header .navbar ul {
       text-transform: uppercase;
       font-weight: 700;
       margin: 0 0 10px;
-      color: #000;
+      color: $dark-text;
       position: relative;
       padding-bottom: 0;
 
