@@ -23,7 +23,7 @@ class Blogs extends Component {
                     title: 'HTTP & MVC Architecture',
                     subtitle: 'Ruby on Rails',
                     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                    img: one,
+                    img: three,
                     date: '7 Jan 2020',
                     link: 'https://medium.com/@danimatton/taking-a-look-at-http-mvc-architecture-and-routes-through-ruby-on-rails-cac9ec742e0a',
                     selected: false
@@ -43,7 +43,7 @@ class Blogs extends Component {
                     title: 'SQL vs. NoSQL',
                     subtitle: 'Databases',
                     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                    img: one,
+                    img: three,
                     date: '19 Feb 2020',
                     link: 'https://medium.com/@danimatton/sql-vs-nosql-whats-the-deal-93b4943a2ce6',
                     selected: false
@@ -63,7 +63,7 @@ class Blogs extends Component {
                     title: 'WebSockets',
                     subtitle: 'WebSockets, Socket.io',
                     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                    img: one,
+                    img: three,
                     date: '14 April 2020',
                     link: 'https://medium.com/@danimatton/what-are-websockets-22a43da6871f',
                     selected: false
@@ -81,7 +81,6 @@ class Blogs extends Component {
             ]
         }}
     render() {
-        const { id, title, subtitle, img, link, selected } = this.state;
 
         return (
             <div className="blogs">
@@ -94,7 +93,7 @@ class Blogs extends Component {
                     <div className="row">
                         <div className="blogs-content">
                             {this.state.blogs.map(blog => (
-                            <div className="box">
+                            <div key={blog.id} className="box">
                                 <div className="img">
                                     <img src={blog.img} alt={blog.title} />
                                 </div>

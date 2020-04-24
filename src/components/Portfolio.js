@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import one from '../images/img1.jpg';
-import two from '../images/img2.jpg';
 import three from '../images/img3.jpg';
 import LightBox from './LightBox';
 
@@ -97,7 +96,6 @@ class Portfolio extends Component {
     }
 
     render() {
-        const { id, title, subtitle, img, link, selected } = this.state;
         
         return (
             <div className="portfolio">
@@ -136,7 +134,7 @@ class Portfolio extends Component {
                     <div className="row">
                         <div className="portfolio-gallery">
                             {this.state.items.map(item => (
-                            <div className="item" onClick={this.handleClick} data-id={item.subtitle}>
+                            <div className="item" key={item.id} onClick={this.handleClick} data-id={item.subtitle}>
                                 <div className="inner">
                                     <img src={item.img} alt="portfolio-img" />
                                     <div className="overlay">

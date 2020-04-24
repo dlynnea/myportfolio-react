@@ -1,5 +1,4 @@
 import React from 'react';
-import one from '../images/img1.jpg';
 
 function LightBox(props) {
     const { id, title, subtitle, img, link, selected } = props;
