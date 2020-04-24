@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Services from './components/Services';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route exact path='/blogs' component={Blogs} />
           <Route exact path='/skills' component={Skills} />
         </Switch>
+        <Footer />
       </Router>
   );
 }

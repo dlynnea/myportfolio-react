@@ -78,7 +78,7 @@
                 transition: all .8s ease;
                 background-color: $accent-text;
                 text-decoration: none;
-                box-shadow: 0 10px 15px #d5d5d5;
+                box-shadow: 0 10px 15px $light-grey;
     
                 &:hover {
                     background-color: $dark-text;
