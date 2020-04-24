@@ -63,7 +63,7 @@ class Portfolio extends Component {
         };
     }
 
-    handleClick = (id, card) => {
+    handleClick = (id) => {
         console.log(id)
         let items = [...this.state.items]
         items[id].selected = items[id].selected ? false : true
@@ -95,28 +95,6 @@ class Portfolio extends Component {
             selectedWork: work
         })
     }
-    /*
-    const filterBtns = document.querySelector('.filter-btns').children;
-    const items = document.querySelector('.portfolio-gallery').children;
-
-    for (let i=0; i<filterBtns; i++) {
-        filterBtns[i].addEventListener("click", function() {
-            for(let j=0; j<filterBtns.length; j++) {
-                filterBtns[j].classList.remove("active")
-            }
-            this.classList.add("active");
-            for(let k=0; k<items.length; k++) {
-                items[k].style.display="none";
-                if(target==items[k].getAttribute("data-id")){
-                    items[k].style.display="block";
-                }
-                    if(target="all") {
-                        items[k].style.display="block";
-                    }
-            }
-        })
-    }
-    */
 
     render() {
         const { id, title, subtitle, img, link, selected } = this.state;

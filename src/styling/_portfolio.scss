@@ -152,4 +152,20 @@
         max-height: 80%;
         display: block;
     }
+
+    .close-lightbox {
+        height: 35px;
+        width: 35px;
+        background-color: $accent-text;
+        color: #fff;
+        line-height: 35px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        border-radius: 50%;
+        z-index: 101;
+    }
 }
+
+// get in touch
