@@ -1,0 +1,90 @@
+.contact {
+    padding: 100px 8px;
+
+    .section-title h1:before {
+        left: 30%;
+    }
+
+    .contact-form {
+        background-color: $light-text;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 50px;
+        border: 1px solid #eee;
+        
+        .text {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-bottom: 20px;
+
+            h2 {
+                font-size: 26px;
+                font-weight: 600;
+                color: $dark-text;
+                margin: 0;
+                padding: 0;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 24px;
+                color: $para-text;
+                margin: 0;
+            }
+        }
+
+        .col-6 {
+            flex: 0 0 calc(50% - 15px);
+            max-width: calc(50% - 15px);
+        }
+
+        .row {
+            justify-content: space-between;
+        }
+
+        .col-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .form-control {
+            // height: 45px;
+            width: 100%;
+            margin-bottom: 15px;
+            border: 1px solid #eee;
+            padding: 6px 12px;
+            font-size: 14px;
+            font-family: $font-family;
+
+            &::placeholder {
+                color: $para-text;
+            }
+        }
+
+        .button {
+            flex: 0 0 100%;
+            max-width: 100%;
+            text-align: right;
+    
+            a {
+                border-radius: 4px;
+                padding-top: 20px;
+                color: $light-text;
+                padding: 12px 25px;
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 600;
+                transition: all .8s ease;
+                background-color: $accent-text;
+                text-decoration: none;
+                box-shadow: 0 10px 15px #d5d5d5;
+    
+                &:hover {
+                    background-color: $dark-text;
+                    color: $light-text;
+                }
+            }
+        }
+    }
+}
