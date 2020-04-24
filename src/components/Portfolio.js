@@ -98,6 +98,7 @@ class Portfolio extends Component {
 
     render() {
         const { id, title, subtitle, img, link, selected } = this.state;
+        
         return (
             <div className="portfolio">
                 <div className="container">

@@ -27,7 +27,7 @@ export function Header() {
                             <Link to="/portfolio">Portfolio</Link>
                         </li>
                         <li>
-                            <Link to="/blog">Blog</Link>
+                            <Link to="/blogs">Blogs</Link>
                         </li>
                         <li>
                             <Link to="/contact">Contact</Link>
