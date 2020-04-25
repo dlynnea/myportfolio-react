@@ -67,10 +67,11 @@
             max-width: 100%;
             text-align: right;
     
-            a {
+            button {
                 border-radius: 4px;
                 padding-top: 20px;
                 color: $light-text;
+                border: none;
                 padding: 12px 25px;
                 font-size: 14px;
                 text-transform: uppercase;
