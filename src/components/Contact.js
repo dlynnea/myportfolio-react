@@ -87,6 +87,8 @@ class Contact extends Component {
                                     <button className="button text-right" type="submit" disabled={this.state.disabled}>Get In Touch</button>
                                 </div>
                             </div>
+                            {this.state.emailSent === true && <p className="alert success-message">Email Sent</p>}
+                            {this.state.emailSent === false && <p className="alert error-message">Email Not Sent</p>}
                         </form>
                     </div>
                 </div>

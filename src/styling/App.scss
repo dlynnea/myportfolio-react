@@ -47,7 +47,6 @@ header {
     font-weight: 600;
     color: $dark-text;
     text-transform: uppercase;
-    // position: absolute;
     left: 0;
     bottom: 0;
 
@@ -197,7 +196,6 @@ header {
       flex: 0 0 75%;
       max-width: 75%;
       padding-left: 25px;
-      border-left: 1px solid #fff;
       margin-top: 300px;
 
       h6 {
@@ -230,8 +228,9 @@ header {
 .cv-btn a {
   border-radius: 4px;
   padding-top: 20px;
+  margin-top: 20px;
   color: $light-text;
-  border: 1px solid #fff;
+  border: 1px solid $off-white;
   padding: 12px 25px;
   display: inline-block;
   font-size: 14px;
@@ -242,7 +241,7 @@ header {
   text-decoration: none;
 
   &:hover {
-    background-color: $light-text;
+    background-color: $off-white;
     color: $dark-text;
   }
 }
@@ -254,19 +253,24 @@ footer {
   padding: 32px 15px;
   background-color: $background;
 
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .logo {
-    flex: 0 0 100%;
-    max-width: 100%;
-    text-align: center;
-    font-size: 42px;
-    color: $light-text;
+    // flex: 0 0 100%;
+    // max-width: 100%;
+    // text-align: center;
+    font-size: 32px;
+    color: $para-text;
     font-weight: 600;
   }
 
   .social {
-    flex: 0 0 100%;
+    // flex: 0 0 100%;
     max-width: 100%;
-    text-align: center;
+    // text-align: center;
     padding-top: 10px;
 
     a {
@@ -286,7 +290,7 @@ footer {
 
 .copyright {
   background-color: $background;
-  padding: 8px;
+  padding: 12px;
   border-top: 1px solid rgb(74, 75, 69);
 
   p {

@@ -89,3 +89,22 @@
         }
     }
 }
+
+/* alerts */
+
+.alert {
+    padding: 0.8rem;
+    margin: 1rem 0;
+    opacity: 0.9;
+    color: #333;
+  }
+
+.error-message {
+    background-color: $warning;
+    color: #fff;
+}
+
+.success-message {
+    background-color: $success;
+    color: #fff;
+}
