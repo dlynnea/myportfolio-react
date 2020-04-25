@@ -10,16 +10,6 @@ class Blogs extends Component {
             blogs: [
                 {
                     id: 0,
-                    title: 'Thin, Vertical Slices',
-                    subtitle: 'CLI App',
-                    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                    img: one,
-                    date: '9 Dec 2019',
-                    link: 'https://medium.com/@danimatton/a-cli-app-thin-vertical-slices-and-the-art-of-collaboration-3f03e0cb288a',
-                    selected: false
-                },
-                {
-                    id: 1,
                     title: 'HTTP & MVC Architecture',
                     subtitle: 'Ruby on Rails',
                     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -29,7 +19,7 @@ class Blogs extends Component {
                     selected: false
                 },
                 {
-                    id: 2,
+                    id: 1,
                     title: 'Forms & FormData',
                     subtitle: 'JavaScript',
                     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -39,7 +29,7 @@ class Blogs extends Component {
                     selected: false
                 },
                 {
-                    id: 3,
+                    id: 2,
                     title: 'SQL vs. NoSQL',
                     subtitle: 'Databases',
                     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -49,7 +39,7 @@ class Blogs extends Component {
                     selected: false
                 },
                 {
-                    id: 4,
+                    id: 3,
                     title: 'Redux Middleware',
                     subtitle: 'Middleware',
                     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -59,7 +49,7 @@ class Blogs extends Component {
                     selected: false
                 },
                 {
-                    id: 5,
+                    id: 4,
                     title: 'WebSockets',
                     subtitle: 'WebSockets, Socket.io',
                     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -69,7 +59,7 @@ class Blogs extends Component {
                     selected: false
                 },
                 {
-                    id: 6,
+                    id: 5,
                     title: 'Getting Started with Node.js',
                     subtitle: 'Node.js',
                     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -102,7 +92,7 @@ class Blogs extends Component {
                                 </div>
                                 <h3>{blog.title}</h3>
                                 <p>{blog.subtitle}</p>
-                                <a href={blog.link}>Read the Article Here</a>
+                                <a target='_blank' href={blog.link}>Read the Article Here</a>
                             </div>
                             ))}
                         </div>

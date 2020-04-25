@@ -5,14 +5,17 @@ $main-font: 'Raleway', sans-serif;
 $font-family: 'Poppins', sans-serif;
 
 $light-text: #fff;
-$dark-text: #000;
+$dark-text: rgb(35, 36, 36);
 $color-text: #402a4e;
-$accent-text: #febd01;
+// $accent-text: #febd01;
+// $accent-text: #833471;
+$accent-text: rgb(123, 42, 87);
 $para-text: #838383;
 $light-grey: #d5d5d5;
 $background: rgb(64, 65, 58);
+$background-light: rgb(240, 240, 236);
 
-$off-white: rgb(240, 237, 244);
+$off-white: rgb(252, 250, 249);
 
 /* utilities */
 .text-center {

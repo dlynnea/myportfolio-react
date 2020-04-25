@@ -28,7 +28,7 @@ body {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   border-bottom: 1px solid #999;
@@ -104,48 +104,30 @@ header {
   }
 }
 
-footer {
-  padding: 40px 15px;
-  background-color: $background;
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
 
-  .logo {
-    flex: 0 0 100%;
-    max-width: 100%;
-    text-align: center;
-    font-size: 45px;
-    color: $light-text;
-    font-weight: 600;
-  }
+  h1 {
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: $dark-text;
+    position: relative;
+    padding-bottom: 0;
 
-  .social {
-    flex: 0 0 100%;
-    max-width: 100%;
-    text-align: center;
-    padding-top: 10px;
-
-    a {
-      color: $para-text;
-      text-decoration: none;
-      display: inline-block;
-      margin: 0 12px;
-      transition: all .5s ease;
-
-      &:hover {
-        color: $off-white;
-      }
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 30%;
+      height: 2px;
+      background-color: $accent-text;
+      bottom: 0;
     }
-  }
-}
-
-.copyright {
-  background-color: $background;
-  border-top: 1px solid $para-text;
-
-  p {
-    color: $para-text;
-    margin: 0;
-    text-align: center;
-    font-weight: 400;
   }
 }
 
@@ -264,4 +246,56 @@ footer {
     color: $dark-text;
   }
 }
+
+
+/* footer */
+
+footer {
+  padding: 32px 15px;
+  background-color: $background;
+
+  .logo {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 42px;
+    color: $light-text;
+    font-weight: 600;
+  }
+
+  .social {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 10px;
+
+    a {
+      color: $para-text;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 12px;
+      font-size: 24px;
+      transition: all .5s ease;
+
+      &:hover {
+        color: $off-white;
+      }
+    }
+  }
+}
+
+.copyright {
+  background-color: $background;
+  padding: 8px;
+  border-top: 1px solid rgb(74, 75, 69);
+
+  p {
+    color: $para-text;
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutMe from '../images/about-me.jpg';
+import aboutMe from '../images/about2.JPG';
 
 export default function About() {
     return (
@@ -14,11 +14,8 @@ export default function About() {
                 <div className="row">
                     <div className="about-content">
                         <div className="row">
-                            <div className="img">
-                                <img className="img" src={aboutMe} alt="about-me" />
-                            </div>
                             <div className="text">
-                                <h4>I'm Danielle Matton</h4>
+                                <h4>I'm Danielle</h4>
                                 <h6>A <span>Software Engineer</span> based in <span>Colorado</span></h6>
                                 <p>I design and develop websites and applications, specializing in creating modern, stylish websites.</p>
                                 <p>I'm extremely passionate about web development and design in all it's forms.</p>
@@ -48,12 +45,12 @@ export default function About() {
                                         <p>dlynnea</p>
                                     </div>
                                     <div className="list">
-                                        <label>Twitter:</label>
-                                        <p>dlynneaa</p>
+                                        <label>Work:</label>
+                                        <p>Seeking new opportunities</p>
                                     </div>
                                     <div className="list">
                                         <label>Freelance:</label>
-                                        <p>available</p>
+                                        <p>Available</p>
                                     </div>
                                 </div>
                                 <div className="social-links">
@@ -66,7 +63,13 @@ export default function About() {
                                     <a href='https://www.youtube.com/channel/UCQOi5mHoizRD6CfirA1gHrQ?view_as=subscriber' target='_blank' rel='noopener noreferrer'>
                                         <i className='fab fa-youtube fa-2x' />
                                     </a>
+                                    <a href='https://github.com/dlynnea' target='_blank' rel='noopener noreferrer'>
+                                        <i className='fab fa-github fa-2x' />
+                                    </a>
                                 </div>
+                            </div>
+                            <div className="img">
+                                <img className="img" src={aboutMe} alt="about-me" />
                             </div>
                         </div>
                     </div>
