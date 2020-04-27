@@ -14,27 +14,30 @@ $para-text: #838383;
 $light-grey: #d5d5d5;
 $background: rgb(64, 65, 58);
 $background-light: rgb(240, 240, 236);
+$warning: #c04b4bd6;
+$success: #81cebe;
 
 $off-white: rgb(252, 250, 249);
 
 /* utilities */
+
 .text-center {
-    text-align: center!important;
-  }
+  text-align: center!important;
+}
+
+.text-left {
+  text-align: left!important;
+}
   
-  .text-left {
-    text-align: left!important;
-  }
-  
-  .text-right {
-    text-align: right!important;
-  }
-  
-  
-  .text-uppercase {
-    text-transform: uppercase!important;
-  }
-  
-  .align-items-center {
-    align-items: center;
-  }
+.text-right {
+  text-align: right!important;
+}
+
+
+.text-uppercase {
+  text-transform: uppercase!important;
+}
+
+.align-items-center {
+  align-items: center;
+}

@@ -67,10 +67,11 @@
             max-width: 100%;
             text-align: right;
     
-            a {
+            button {
                 border-radius: 4px;
                 padding-top: 20px;
                 color: $light-text;
+                border: none;
                 padding: 12px 25px;
                 font-size: 14px;
                 text-transform: uppercase;
@@ -87,4 +88,23 @@
             }
         }
     }
+}
+
+/* alerts */
+
+.alert {
+    padding: 0.8rem;
+    margin: 1rem 0;
+    opacity: 0.9;
+    color: #333;
+  }
+
+.error-message {
+    background-color: $warning;
+    color: #fff;
+}
+
+.success-message {
+    background-color: $success;
+    color: #fff;
 }
