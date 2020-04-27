@@ -30,7 +30,7 @@ class Contact extends Component {
             emailSent: false
     });
 
-    Axios.post('http://localhost:3030/api/email', this.state)
+    Axios.post('https://d-portfolio.herokuapp.com/api', this.state)
         .then(res => {
             if(res.data.success) {
                 this.setState({
