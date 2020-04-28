@@ -31,7 +31,7 @@ class Contact extends Component {
     });
     //https://d-portfolio.herokuapp.com/
     
-    Axios.post('http://localhost:3030/email', this.state)
+    Axios.post('https://d-portfolio.herokuapp.com/email', this.state)
         .then(res => {
             if(res.data.success) {
                 this.setState({
