@@ -6,6 +6,8 @@
 @import 'blogs';
 @import 'contact';
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +33,7 @@ header {
   position: fixed;
   left: 0;
   right: 0;
-  border-bottom: 1px solid #999;
+  // border-bottom: 1px solid #999;
   padding: 0 15px;
   z-index: 10;
   background-color: $off-white;
@@ -45,10 +47,18 @@ header {
   .brand-name {
     font-size: 22px;
     font-weight: 600;
-    color: $dark-text;
-    text-transform: uppercase;
+    color: $background;
+    border: 7px solid $background;
+    padding: 6px;
+    font-family: 'Caveat', cursive;
+    border-radius: 7px;
     left: 0;
     bottom: 0;
+    
+    .logo {
+      text-transform: lowercase;
+
+    }
 
     a {
       font-size: 22px;

@@ -29,35 +29,34 @@ class Contact extends Component {
             disabled: true,
             emailSent: false
     });
-    //https://d-portfolio.herokuapp.com/
     
-    Axios.post('https://d-portfolio.herokuapp.com/email', this.state)
-        .then(res => {
-            if(res.data.success) {
-                this.setState({
-                    disabled: false,
-                    emailSent: true
-                });
-            } else {
+        Axios.post('https://d-portfolio.herokuapp.com/email', this.state)
+            .then(res => {
+                if(res.data.success) {
+                    this.setState({
+                        disabled: false,
+                        emailSent: true
+                    });
+                } else {
+                    this.setState({
+                        disabled: false,
+                        emailSent: false
+                    });
+                }
+            })
+            .catch(err => {
                 this.setState({
                     disabled: false,
                     emailSent: false
                 });
-            }
-        })
-        .catch(err => {
+            })
             this.setState({
+                name: '',
+                email: '',
+                message: '',
                 disabled: false,
-                emailSent: false
-            });
-        })
-        this.setState({
-            name: '',
-            email: '',
-            message: '',
-            disabled: false,
-            emailSent: null
-        })
+                emailSent: null
+            })
     }
 
     render() {
@@ -73,7 +72,7 @@ class Contact extends Component {
                         <form className="contact-form" onSubmit={this.handleSubmit}>
                             <div className="row">
                                 <div className="text">
-                                    <h2>Drop me a line</h2>
+                                    <h2>Let's Chat</h2>
                                     <p>I would love to chat or answer any questions you may have!</p>
                                 </div>
                             </div>

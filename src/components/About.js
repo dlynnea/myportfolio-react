@@ -15,11 +15,36 @@ export default function About() {
                     <div className="about-content">
                         <div className="row">
                             <div className="text">
-                                <h4>I'm Danielle</h4>
-                                <h6>A <span>Software Engineer</span> based in <span>Colorado</span></h6>
-                                <p>I'm a full-stack web developer with a passion for design and creating modern, stylish websites.</p>
-                                <p>When I'm not coding or learning new technologies, I am either outdoors, camping or hiking or in the pottery studio.</p>
+                                <h4>Hello.</h4>
+                                <h6>I'm Danielle, a <span>Software Engineer</span> based in <span>Colorado</span></h6>
+                                <p>I'm a full-stack web developer with an instinct for design. I enjoy writing clean code and then obsessing over colors, shapes and position.</p>
                                 <div className="info">
+                                    <div className="list">
+                                        <label>As a developer I love...</label>
+                                    </div>
+                                    <div className="list">                            
+                                    <label>In my spare time I love...</label>
+                                    </div>
+                                    <div className="list">
+                                        <p>The relief of finding your bug days later</p>
+                                    </div>
+                                    <div className="list">
+                                        <p>Pottery</p>
+                                    </div>
+                                    <div className="list">
+                                        <p>Playing with the user interface</p>
+                                        </div>
+                                    <div className="list">
+                                        <p>Spending time in the mountains</p>
+                                    </div>
+                                    <div className="list">
+                                        <p>Learning new technologies, languages</p>
+                                    </div>
+                                    <div className="list">
+                                        <p>Traveling</p>
+                                    </div>
+                                </div>
+                                {/* <div className="info">
                                     <div className="list">
                                         <label>Birthday:</label>
                                         <p>September 27th</p>
@@ -52,8 +77,9 @@ export default function About() {
                                         <label>Work:</label>
                                         <p>Seeking new opportunities</p>
                                     </div>
-                                </div>
+                                </div> */}
                                 <div className="social-links">
+                                    <p>You can find me on... </p>
                                     <a href='https://www.linkedin.com/in/danielle-matton/' target='_blank' rel='noopener noreferrer'>
                                         <i className='fab fa-linkedin fa-2x' />
                                     </a>
