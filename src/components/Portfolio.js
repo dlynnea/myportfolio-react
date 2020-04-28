@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import one from '../images/img1.jpg';
 import three from '../images/img3.jpg';
 import LightBox from './LightBox';
+import craft from '../images/craft.png';
+import dotJoin from '../images/dotJoin.png';
+import curator from '../images/curator.png';
 
 class Portfolio extends Component {
 
@@ -14,7 +17,7 @@ class Portfolio extends Component {
                     id: 0,
                     title: 'Curator',
                     subtitle: 'Content Aggregator',
-                    img: one,
+                    img: curator,
                     link: 'https://github.com/dlynnea/curator-frontend',
                     selected: false
                 },
@@ -22,7 +25,7 @@ class Portfolio extends Component {
                     id: 1,
                     title: 'DotJoin',
                     subtitle: 'Social Network Application',
-                    img: three,
+                    img: dotJoin,
                     link: 'https://github.com/dlynnea/dot-join',
                     selected: false
                 },
@@ -30,7 +33,7 @@ class Portfolio extends Component {
                     id: 2,
                     title: 'Craft Chat',
                     subtitle: 'Chatroom Application',
-                    img: one,
+                    img: craft,
                     link: 'https://github.com/dlynnea/chatroom',
                     selected: false
                 },
@@ -95,8 +98,7 @@ class Portfolio extends Component {
         })
     }
 
-    render() {
-        
+    render() {  
         return (
             <div className="portfolio">
                 <div className="container">
@@ -106,7 +108,7 @@ class Portfolio extends Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="filter-buttons">
+                        {/* <div className="filter-buttons">
                             <ul className="filter-btns">
                                 <li 
                                     className={this.state.active && 'active'}
@@ -129,7 +131,7 @@ class Portfolio extends Component {
                                     data-target="fashion"
                                 >Fashion</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="row">
                         <div className="portfolio-gallery">

@@ -17,12 +17,12 @@ export default function About() {
                             <div className="text">
                                 <h4>I'm Danielle</h4>
                                 <h6>A <span>Software Engineer</span> based in <span>Colorado</span></h6>
-                                <p>I design and develop websites and applications, specializing in creating modern, stylish websites.</p>
-                                <p>I'm extremely passionate about web development and design in all it's forms.</p>
+                                <p>I'm a full-stack web developer with a passion for design and creating modern, stylish websites.</p>
+                                <p>When I'm not coding or learning new technologies, I am either outdoors, camping or hiking or in the pottery studio.</p>
                                 <div className="info">
                                     <div className="list">
                                         <label>Birthday:</label>
-                                        <p>September 27th 1990</p>
+                                        <p>September 27th</p>
                                     </div>
                                     <div className="list">
                                         <label>Email:</label>
@@ -45,12 +45,12 @@ export default function About() {
                                         <p>dlynnea</p>
                                     </div>
                                     <div className="list">
-                                        <label>Work:</label>
-                                        <p>Seeking new opportunities</p>
+                                        <label>From:</label>
+                                        <p>Portland, OR</p>
                                     </div>
                                     <div className="list">
-                                        <label>Freelance:</label>
-                                        <p>Available</p>
+                                        <label>Work:</label>
+                                        <p>Seeking new opportunities</p>
                                     </div>
                                 </div>
                                 <div className="social-links">

@@ -29,8 +29,9 @@ class Contact extends Component {
             disabled: true,
             emailSent: false
     });
-
-    Axios.post('https://d-portfolio.herokuapp.com/api/email', this.state)
+    //https://d-portfolio.herokuapp.com/
+    
+    Axios.post('http://localhost:3030/email', this.state)
         .then(res => {
             if(res.data.success) {
                 this.setState({
@@ -41,7 +42,7 @@ class Contact extends Component {
                 this.setState({
                     disabled: false,
                     emailSent: false
-                })
+                });
             }
         })
         .catch(err => {
@@ -49,6 +50,13 @@ class Contact extends Component {
                 disabled: false,
                 emailSent: false
             });
+        })
+        this.setState({
+            name: '',
+            email: '',
+            message: '',
+            disabled: false,
+            emailSent: null
         })
     }
 
@@ -87,8 +95,8 @@ class Contact extends Component {
                                     <button className="button text-right" type="submit" disabled={this.state.disabled}>Get In Touch</button>
                                 </div>
                             </div>
-                            {this.state.emailSent === true && <p className="alert success-message">Email Sent</p>}
-                            {this.state.emailSent === false && <p className="alert error-message">Email Not Sent</p>}
+                            {this.state.emailSent === true && <p className="alert success-message">Your email has been sent!</p>}
+                            {this.state.emailSent === false && <p className="alert error-message">Sorry, your email was not sent</p>}
                         </form>
                     </div>
                 </div>
