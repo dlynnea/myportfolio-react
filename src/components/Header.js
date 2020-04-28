@@ -17,9 +17,9 @@ export function Header() {
                         <li>
                             <Link to="/about">About</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="/services">Services</Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link to="/skills">Skills</Link>
                         </li>
