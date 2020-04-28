@@ -6,8 +6,6 @@
 @import 'blogs';
 @import 'contact';
 
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +32,7 @@ header {
   left: 0;
   right: 0;
   // border-bottom: 1px solid #999;
-  padding: 0 15px;
+  padding: 10px 15px;
   z-index: 10;
   background-color: $off-white;
   color: $color-text;
@@ -50,14 +48,19 @@ header {
     color: $background;
     border: 7px solid $background;
     padding: 6px;
-    font-family: 'Caveat', cursive;
+    // font-family: 'Caveat', cursive;
+    font-family: 'Satisfy', cursive;
     border-radius: 7px;
     left: 0;
     bottom: 0;
+
+    &:hover {
+      transform: rotate(360deg);
+      transition: all 2s ease;
+    }
     
     .logo {
-      text-transform: lowercase;
-
+      // text-transform: lowercase;
     }
 
     a {
@@ -83,7 +86,8 @@ header {
         font-size: 15px;
         text-decoration: none;
         line-height: 72px;
-        color: $color-text;
+        color: $background;
+        text-transform: uppercase;
         font-weight: 600;
         position: relative;
         display: block;
@@ -91,11 +95,11 @@ header {
         &::before {
           content: '';
           height: 3px;
-          background-color: $light-text;
+          background-color: $background;
           width: 0%;
           position: absolute;
           right: 0;
-          bottom: -1px;
+          bottom: 14px;
           transition: all .5s ease;
         }
   
@@ -236,12 +240,12 @@ header {
 }
 
 .cv-btn a {
-  border-radius: 4px;
+  border-radius: 6px;
   padding-top: 20px;
   margin-top: 20px;
   color: $light-text;
-  border: 1px solid $off-white;
-  padding: 12px 25px;
+  border: 5px solid $off-white;
+  padding: 8px 18px;
   display: inline-block;
   font-size: 14px;
   text-transform: uppercase;
