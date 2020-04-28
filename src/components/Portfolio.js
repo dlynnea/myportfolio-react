@@ -12,26 +12,26 @@ class Portfolio extends Component {
             items: [
                 {
                     id: 0,
-                    title: 'title',
-                    subtitle: 'photoshop',
+                    title: 'Curator',
+                    subtitle: 'Content Aggregator',
                     img: one,
-                    link: '',
+                    link: 'https://github.com/dlynnea/curator-frontend',
                     selected: false
                 },
                 {
                     id: 1,
-                    title: 'title',
-                    subtitle: 'fashion',
+                    title: 'DotJoin',
+                    subtitle: 'Social Network Application',
                     img: three,
-                    link: '',
+                    link: 'https://github.com/dlynnea/dot-join',
                     selected: false
                 },
                 {
                     id: 2,
-                    title: 'title',
-                    subtitle: 'branding',
+                    title: 'Craft Chat',
+                    subtitle: 'Chatroom Application',
                     img: one,
-                    link: '',
+                    link: 'https://github.com/dlynnea/chatroom',
                     selected: false
                 },
                 {

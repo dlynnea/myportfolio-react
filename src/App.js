@@ -6,7 +6,7 @@ import { Home } from './components/Home';
 import About from './components/About';
 import Blogs from './components/Blogs';
 import Contact from './components/Contact';
-import Services from './components/Services';
+// import Services from './components/Services';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
@@ -20,7 +20,7 @@ function App() {
           <Route exact path='/about' component={About} />
           <Route exact path='/portfolio' component={Portfolio} />
           <Route exact path='/contact' component={Contact} />
-          <Route exact path='/services' component={Services} />
+          {/* <Route exact path='/services' component={Services} /> */}
           <Route exact path='/blogs' component={Blogs} />
           <Route exact path='/skills' component={Skills} />
         </Switch>
