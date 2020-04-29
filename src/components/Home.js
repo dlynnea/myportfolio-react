@@ -2,7 +2,6 @@ import React from 'react';
 import PDF from './Danielle-Matton.pdf';
 import aboutMe from '../images/about2.JPG';
 
-
 export const Home = () => {
     return (
         <>
@@ -11,7 +10,7 @@ export const Home = () => {
                 <div className="row">
                     <div className="home-content">
                         <div className="block">
-                            <h6>Hello, My Name is</h6>
+                            <h6>Hello, I'm</h6>
                             <h1>Dani Matton</h1>
                             <h3>Full Stack Web Developer, Software Engineer, Designer</h3>
                             <div className="cv-btn">

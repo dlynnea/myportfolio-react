@@ -8,62 +8,59 @@ import curator from '../images/curator.png';
 
 class Portfolio extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            active: false,
-            items: [
-                {
-                    id: 0,
-                    title: 'Curator',
-                    subtitle: 'Content Aggregator',
-                    img: curator,
-                    link: 'https://github.com/dlynnea/curator-frontend',
-                    selected: false
-                },
-                {
-                    id: 1,
-                    title: 'DotJoin',
-                    subtitle: 'Social Network Application',
-                    img: dotJoin,
-                    link: 'https://github.com/dlynnea/dot-join',
-                    selected: false
-                },
-                {
-                    id: 2,
-                    title: 'Craft Chat',
-                    subtitle: 'Chatroom Application',
-                    img: craft,
-                    link: 'https://github.com/dlynnea/chatroom',
-                    selected: false
-                },
-                {
-                    id: 3,
-                    title: 'title',
-                    subtitle: 'fashion',
-                    img: three,
-                    link: '',
-                    selected: false
-                },
-                {
-                    id: 4,
-                    title: 'title',
-                    subtitle: 'branding',
-                    img: one,
-                    link: '',
-                    selected: false
-                },
-                {
-                    id: 5,
-                    title: 'title',
-                    subtitle: 'fashion',
-                    img: three,
-                    link: '',
-                    selected: false
-                },
-            ]
-        };
-    }
+    state = {
+        active: false,
+        items: [
+            {
+                id: 0,
+                title: 'Curator',
+                subtitle: 'Content Aggregator',
+                img: curator,
+                link: 'https://github.com/dlynnea/curator-frontend',
+                selected: false
+            },
+            {
+                id: 1,
+                title: 'DotJoin',
+                subtitle: 'Social Network Application',
+                img: dotJoin,
+                link: 'https://github.com/dlynnea/dot-join',
+                selected: false
+            },
+            {
+                id: 2,
+                title: 'Craft Chat',
+                subtitle: 'Chatroom Application',
+                img: craft,
+                link: 'https://github.com/dlynnea/chatroom',
+                selected: false
+            },
+            {
+                id: 3,
+                title: 'title',
+                subtitle: 'fashion',
+                img: three,
+                link: '',
+                selected: false
+            },
+            {
+                id: 4,
+                title: 'title',
+                subtitle: 'branding',
+                img: one,
+                link: '',
+                selected: false
+            },
+            {
+                id: 5,
+                title: 'title',
+                subtitle: 'fashion',
+                img: three,
+                link: '',
+                selected: false
+            },
+        ]
+    };
 
     handleClick = (id) => {
         console.log(id)
@@ -108,43 +105,17 @@ class Portfolio extends Component {
                         </div>
                     </div>
                     <div className="row">
-                        {/* <div className="filter-buttons">
-                            <ul className="filter-btns">
-                                <li 
-                                    className={this.state.active && 'active'}
-                                    onClick={this.toggleActive}
-                                    data-target="all"
-                                >All</li>
-                                <li 
-                                    className={this.state.active && 'active'} 
-                                    onClick={this.toggleActive}
-                                    data-target="branding"
-                                >Branding</li>
-                                <li 
-                                    className={this.state.active && 'active'} 
-                                    onClick={this.toggleActive}
-                                    data-target="photoshop"
-                                >Photoshop</li>
-                                <li 
-                                    className={this.state.active && 'active'} 
-                                    onClick={this.toggleActive}
-                                    data-target="fashion"
-                                >Fashion</li>
-                            </ul>
-                        </div> */}
-                    </div>
-                    <div className="row">
                         <div className="portfolio-gallery">
                             {this.state.items.map(item => (
-                            <div className="item" key={item.id} onClick={this.handleClick} data-id={item.subtitle}>
+                            <div className="item" key={item.id} data-id={item.subtitle}>
                                 <div className="inner">
                                     <img src={item.img} alt="portfolio-img" />
                                     <div className="overlay">
                                         <h5>{item.subtitle}</h5>
                                         <h4>{item.title}</h4>
-                                        <a href={item.link} className="project-link">View Project</a>
+                                        <a href={item.link} target="_blank" className="project-link">View Project</a>
                                     </div>
-                                    {item.selected && <LightBox title={item.title} subtitle={item.subtitle} link={item.link}/>}
+                                    {/* {item.selected && <LightBox title={item.title} subtitle={item.subtitle} link={item.link}/>} */}
                                 </div>
                             </div>
                             ))}

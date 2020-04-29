@@ -6,8 +6,7 @@ import { Home } from './components/Home';
 import About from './components/About';
 import Blogs from './components/Blogs';
 import Contact from './components/Contact';
-// import Services from './components/Services';
-import Skills from './components/Skills';
+import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 
@@ -22,7 +21,8 @@ function App() {
           <Route exact path='/contact' component={Contact} />
           {/* <Route exact path='/services' component={Services} /> */}
           <Route exact path='/blogs' component={Blogs} />
-          <Route exact path='/skills' component={Skills} />
+          <Route exact path='/resume' component={Resume} />
+          {/* <Route exact path='/skills' component={Skills} /> */}
         </Switch>
         <Footer />
       </Router>
