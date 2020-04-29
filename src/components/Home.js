@@ -52,19 +52,19 @@ export const Home = () => {
                                         <p><i class="fas fa-code"></i> The relief of finding your bug days later</p>
                                     </div>
                                     <div className="list">
-                                        <p><i class="far fa-heart"></i> Pottery</p>
+                                        <p><i class="far fa-heart"></i> Pottery, Painting, Curation, Design</p>
                                     </div>
                                     <div className="list">
-                                        <p> <i class="fas fa-code"></i>Playing with the user interface</p>
+                                        <p> <i class="fas fa-code"></i> Playing with the user interface</p>
                                         </div>
                                     <div className="list">
-                                        <p><i class="far fa-heart"></i> Spending time in the mountains</p>
+                                        <p><i class="far fa-heart"></i> Spending time in the mountains, camping, hiking</p>
                                     </div>
                                     <div className="list">
                                         <p><i class="fas fa-code"></i> Learning new technologies, languages</p>
                                     </div>
                                     <div className="list">
-                                        <p><i class="far fa-heart"></i> Traveling</p>
+                                        <p><i class="far fa-heart"></i> Traveling, learning new languages and culture</p>
                                     </div>
                                 </div>
                                 <div className="social-links">

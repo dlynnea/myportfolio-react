@@ -62,14 +62,19 @@
             &:hover .overlay {
                 opacity: 1;
 
-                .fa {
-                    -webkit-animation: galleryIcon .8s ease;
-                    animation: galleryIcon .8s ease;
+                a {
+                    -webkit-animation: galleryLink .8s ease;
+                    animation: galleryLink .8s ease;
                 }
 
                 h4 {
                     -webkit-animation: galleryText .8s ease;
                     animation: galleryText .8s ease;
+                }
+
+                h5 {
+                    -webkit-animation: galleryText2 1s ease;
+                    animation: galleryText2 1s ease;
                 }
             }
 
@@ -143,7 +148,16 @@
     }
 }
 
-@keyframes galleryIcon {
+@keyframes galleryText2 {
+    0% {
+        transform: translateY(-20px);opacity: 0;
+    }
+    100% {
+        transform: translateY(0);opacity: 1;
+    }
+}
+
+@keyframes galleryLink {
     0% {
         transform: translateY(20px);opacity: 0;
     }

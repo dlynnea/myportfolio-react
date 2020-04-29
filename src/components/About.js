@@ -14,6 +14,9 @@ export default function About() {
                 <div className="row">
                     <div className="about-content">
                         <div className="row">
+                        <div className="img">
+                            <img className="img" src={aboutMe} alt="about-me" />
+                        </div>
                             <div className="text">
                                 <h4>Hello.</h4>
                                 <h6>I'm Danielle, a <span>Software Engineer</span> based in <span>Colorado</span></h6>
@@ -93,9 +96,6 @@ export default function About() {
                                         <i className='fab fa-github fa-2x' />
                                     </a>
                                 </div>
-                            </div>
-                            <div className="img">
-                                <img className="img" src={aboutMe} alt="about-me" />
                             </div>
                         </div>
                     </div>
