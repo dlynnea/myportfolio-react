@@ -48,8 +48,8 @@ header {
     color: $background;
     border: 7px solid $background;
     padding: 6px;
-    // font-family: 'Caveat', cursive;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Caveat', cursive;
+    // font-family: 'Bellota', cursive;
     border-radius: 7px;
     left: 0;
     bottom: 0;
@@ -60,7 +60,7 @@ header {
     }
     
     .logo {
-      // text-transform: lowercase;
+      text-transform: lowercase;
     }
 
     a {

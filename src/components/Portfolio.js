@@ -104,7 +104,7 @@ class Portfolio extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="section-title text-center">
-                            <h1>My Latest Work</h1>
+                            <h1>My Recent Projects</h1>
                         </div>
                     </div>
                     <div className="row">
@@ -140,8 +140,9 @@ class Portfolio extends Component {
                                 <div className="inner">
                                     <img src={item.img} alt="portfolio-img" />
                                     <div className="overlay">
-                                        <span className="fa fa-plus"></span>
+                                        <h5>{item.subtitle}</h5>
                                         <h4>{item.title}</h4>
+                                        <a href={item.link} className="project-link">View Project</a>
                                     </div>
                                     {item.selected && <LightBox title={item.title} subtitle={item.subtitle} link={item.link}/>}
                                 </div>

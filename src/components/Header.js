@@ -7,7 +7,7 @@ export function Header() {
             <div className="container">
                 <div className="row">
                 <div className="brand-name">
-                    <Link className="logo" to="/">D / M</Link>
+                    <Link className="logo" to="/">D//M</Link>
                 </div>
                 <div className="navbar">
                     <ul>
