@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import one from '../images/img1.jpg';
-import three from '../images/img3.jpg';
 import npm from '../images/npm.jpeg';
 import middleware from '../images/middleware.jpeg';
 import database from '../images/database.jpg';
@@ -10,73 +8,71 @@ import form from '../images/form.jpeg';
 
 class Blogs extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            blogs: [
-                {
-                    id: 0,
-                    title: 'Getting Started with Node.js',
-                    subtitle: 'Node.js',
-                    summary: 'Node is primarily used for non-blocking, event-driven servers because of its single-threaded nature. It is used for traditional web applications and backend API services but was also designed for real-time websites with push-capability.',
-                    img: npm,
-                    date: '21 April 2020',
-                    link: 'https://medium.com/@danimatton/getting-started-with-node-js-e4717cbc2ace',
-                    selected: false
-                },
-                {
-                    id: 1,
-                    title: 'WebSockets',
-                    subtitle: 'WebSockets, Socket.io',
-                    summary: 'WebSockets allow for a bi-directional communication channel, meaning data flows both ways. The client and the server can talk in real-time without having to continuously make requests.',
-                    img: sockets,
-                    date: '14 April 2020',
-                    link: 'https://medium.com/@danimatton/what-are-websockets-22a43da6871f',
-                    selected: false
-                },
-                {
-                    id: 2,
-                    title: 'Redux Middleware',
-                    subtitle: 'Middleware',
-                    summary: 'Middleware provides a way to interact with actions that have been dispatched to the store before they reach the store’s reducer. Some uses for middleware would be logging actions, reporting errors, making asynchronous requests, as well as dispatching new actions.',
-                    img: middleware,
-                    date: '11 March 2020',
-                    link: 'https://medium.com/@danimatton/redux-middleware-what-is-it-why-use-it-ea18e0433fa0',
-                    selected: false
-                },
-                {
-                    id: 3,
-                    title: 'SQL vs. NoSQL',
-                    subtitle: 'Databases',
-                    summary: 'Choosing a noSQL database over RDBMS are more prominent when needing to work with big data, when the big data needs a flexible data model with a better database architecture, or in the case of processing big data, the databases need continuous application availability with modern transaction support.',
-                    img: database,
-                    date: '19 Feb 2020',
-                    link: 'https://medium.com/@danimatton/sql-vs-nosql-whats-the-deal-93b4943a2ce6',
-                    selected: false
-                },
-                {
-                    id: 4,
-                    title: 'Forms & FormData',
-                    subtitle: 'JavaScript',
-                    summary: 'Traditionally, a form was the only way to send data, in which the client had entered, back to the server. <form> is an HTML tag that allows you to perform GET / POST / UPDATE / DELETE, etc. operations without writing any code in JavaScript or server-side, in fact forms were designed for a pre-JavaScript Web.',
-                    img: form,
-                    date: '29 Jan 2020',
-                    link: 'https://medium.com/@danimatton/forms-formdata-and-javascript-32d97bcd28d8',
-                    selected: false
-                },
-                {
-                    id: 5,
-                    title: 'HTTP & MVC Architecture',
-                    subtitle: 'Ruby on Rails',
-                    summary: 'MVC separates an application into three components. The Models for handling data and business logic, the Controllers for handling the user interface and application, and Views for handling graphical user interface objects and presentation.',
-                    img: architecture,
-                    date: '7 Jan 2020',
-                    link: 'https://medium.com/@danimatton/taking-a-look-at-http-mvc-architecture-and-routes-through-ruby-on-rails-cac9ec742e0a',
-                    selected: false
-                }
-            ]
-        }
+    state = {
+        blogs: [
+            {
+                id: 0,
+                title: 'Getting Started with Node.js',
+                subtitle: 'Node.js',
+                summary: 'Node is primarily used for non-blocking, event-driven servers because of its single-threaded nature. It is used for traditional web applications and backend API services but was also designed for real-time websites with push-capability.',
+                img: npm,
+                date: '21 April 2020',
+                link: 'https://medium.com/@danimatton/getting-started-with-node-js-e4717cbc2ace',
+                selected: false
+            },
+            {
+                id: 1,
+                title: 'WebSockets',
+                subtitle: 'WebSockets, Socket.io',
+                summary: 'WebSockets allow for a bi-directional communication channel, meaning data flows both ways. The client and the server can talk in real-time without having to continuously make requests.',
+                img: sockets,
+                date: '14 April 2020',
+                link: 'https://medium.com/@danimatton/what-are-websockets-22a43da6871f',
+                selected: false
+            },
+            {
+                id: 2,
+                title: 'Redux Middleware',
+                subtitle: 'Middleware',
+                summary: 'Middleware provides a way to interact with actions that have been dispatched to the store before they reach the store’s reducer. Some uses for middleware would be logging actions, reporting errors, making asynchronous requests, as well as dispatching new actions.',
+                img: middleware,
+                date: '11 March 2020',
+                link: 'https://medium.com/@danimatton/redux-middleware-what-is-it-why-use-it-ea18e0433fa0',
+                selected: false
+            },
+            {
+                id: 3,
+                title: 'SQL vs. NoSQL',
+                subtitle: 'Databases',
+                summary: 'Choosing a noSQL database over RDBMS are more prominent when needing to work with big data, when the big data needs a flexible data model with a better database architecture, or in the case of processing big data, the databases need continuous application availability with modern transaction support.',
+                img: database,
+                date: '19 Feb 2020',
+                link: 'https://medium.com/@danimatton/sql-vs-nosql-whats-the-deal-93b4943a2ce6',
+                selected: false
+            },
+            {
+                id: 4,
+                title: 'Forms & FormData',
+                subtitle: 'JavaScript',
+                summary: 'Traditionally, a form was the only way to send data, in which the client had entered, back to the server. <form> is an HTML tag that allows you to perform GET / POST / UPDATE / DELETE, etc. operations without writing any code in JavaScript or server-side, in fact forms were designed for a pre-JavaScript Web.',
+                img: form,
+                date: '29 Jan 2020',
+                link: 'https://medium.com/@danimatton/forms-formdata-and-javascript-32d97bcd28d8',
+                selected: false
+            },
+            {
+                id: 5,
+                title: 'HTTP & MVC Architecture',
+                subtitle: 'Ruby on Rails',
+                summary: 'MVC separates an application into three components. The Models for handling data and business logic, the Controllers for handling the user interface and application, and Views for handling graphical user interface objects and presentation.',
+                img: architecture,
+                date: '7 Jan 2020',
+                link: 'https://medium.com/@danimatton/taking-a-look-at-http-mvc-architecture-and-routes-through-ruby-on-rails-cac9ec742e0a',
+                selected: false
+            }
+        ]
     }
+
 
     render() {
         return (
