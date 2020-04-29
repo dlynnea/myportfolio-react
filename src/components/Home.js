@@ -66,6 +66,12 @@ export const Home = () => {
                                     <div className="list">
                                         <p><i class="far fa-heart"></i> Traveling, learning new languages and culture</p>
                                     </div>
+                                    <div className="list">
+                                        <p><i class="fas fa-code"></i> Learning new technologies, languages</p>
+                                    </div>
+                                    <div className="list">
+                                        <p><i class="far fa-heart"></i> Traveling, learning new languages and culture</p>
+                                    </div>
                                 </div>
                                 <div className="social-links">
                                     {/* <span>You can find me on... </span> */}
