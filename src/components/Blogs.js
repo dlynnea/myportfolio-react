@@ -99,7 +99,7 @@ class Blogs extends Component {
                                 </div>
                                 <h3>{blog.title}</h3>
                                 <p>{blog.summary}</p>
-                                <a target='_blank' rel="noopener noreferrer" href={blog.link}>Read the Article Here</a>
+                                <a target='_blank' rel="noopener noreferrer" href={blog.link}>Read {blog.title}</a>
                             </div>
                             ))}
                         </div>

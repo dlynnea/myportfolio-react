@@ -12,10 +12,11 @@ export function Header() {
                 <div className="navbar">
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link to="/"><a href="#home">Home</a></Link>
                         </li>
                         <li>
-                            <Link to="/about">About</Link>
+                            {/* <Link to="/about">About</Link> */}
+                            <a href="#about">About</a>
                         </li>
                         {/* <li>
                             <Link to="/services">Services</Link>

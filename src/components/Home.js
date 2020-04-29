@@ -7,7 +7,7 @@ import aboutMe from '../images/about2.JPG';
 export const Home = () => {
     return (
         <>
-        <div className="home">
+        <div className="home" id="home">
             <div className="container">
                 <div className="row">
                     <div className="home-content">
@@ -24,7 +24,7 @@ export const Home = () => {
             </div>
         </div>
 
-        <div className="about">
+        <div className="about" id="about">
             <div className="container">
                 <div className="row">
                     <div className="section-title">
