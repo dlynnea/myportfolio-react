@@ -9,6 +9,9 @@ export function Header() {
                 <div className="brand-name">
                     <Link className="logo" to="/">D /M</Link>
                 </div>
+                <div className="hamburger">
+                    <i className="fa fa-bars"></i>
+                </div>
                 <div className="navbar">
                     <ul>
                         <li>

@@ -55,7 +55,7 @@ class Resume extends Component {
                                 <div className="block">
                                     <h3>Currently Open to new Opportunities</h3>
                                     <div className="cv-btn">
-                                        <a href={PDF} target="_blank">Download Resume <i class="fas fa-long-arrow-alt-down"></i></a>
+                                        <a href={PDF} target="_blank" rel="noopener noreferrer">Download Resume <i class="fas fa-long-arrow-alt-down"></i></a>
                                     </div>
                                 </div>
                             </div>

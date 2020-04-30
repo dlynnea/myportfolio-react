@@ -1,0 +1,42 @@
+
+@media(max-width: 991px){
+    .home .home-content .block h1 {
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 767px){
+    header {
+        padding: 15px;
+        position: fixed;
+        background-color: #fff;
+        border: none;
+
+        .brand-name a {
+            color: #000;
+        }
+
+        .hamburger .fa {
+            display: inline-block;
+        }
+
+        div.navbar {
+            position: absolute;
+            background-color: #fff;
+            width: 100%;
+            left: 0;
+            top: 60px;
+            padding: 15px;
+            // display: none;
+
+            ul li {
+                display: block;
+                margin-left: 0;
+
+                a {
+                    line-height: 42px;
+                }
+            }
+        }
+    }
+}
