@@ -2,6 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 export function Header() {
+
+    const handleClick = () => {
+        console.log("click")
+    }
+
     return (
         <header>
             <div className="container">
@@ -9,7 +14,7 @@ export function Header() {
                 <div className="brand-name">
                     <Link className="logo" to="/">D /M</Link>
                 </div>
-                <div className="hamburger">
+                <div className="hamburger" onClick={handleClick}>
                     <i className="fa fa-bars"></i>
                 </div>
                 <div className="navbar">
