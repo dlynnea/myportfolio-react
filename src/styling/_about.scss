@@ -53,25 +53,28 @@
           height: 30px;
           width: 30px;
           border-radius: 3px;
-          background-color: $background;
+          // background-color: $background;
           display: inline-block;
           text-align: center;
-          border: 1px solid $dark-text;
+          // border: 1px solid $dark-text;
           line-height: 32px;
-          margin: 0 4px;
+          margin: 0 10px;
           transition: all .5s ease;
 
           &:hover {
             background-color: transparent;
 
             .fab {
-              color: $dark-text;
+              color: $background;
+              margin-bottom: 5px;
+              position: relative;
+              top: -5px;
             }
           }
 
           .fab {
-            color: $light-text;
-            font-size: 20px;
+            color: $background;
+            font-size: 28px;
             transition: all .5s ease;
           }
         }

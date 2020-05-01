@@ -84,7 +84,7 @@ export default function About() {
                                 <div className="social-links">
                                     <p>You can find me on... </p>
                                     <a href='https://www.linkedin.com/in/danielle-matton/' target='_blank' rel='noopener noreferrer'>
-                                        <i className='fab fa-linkedin fa-2x' />
+                                    <i class="fab fa-linkedin-in"></i>
                                     </a>
                                     <a href='https://twitter.com/dlynneaa' target='_blank' rel='noopener noreferrer'>
                                         <i className='fab fa-twitter fa-2x' />
@@ -94,6 +94,9 @@ export default function About() {
                                     </a>
                                     <a href='https://github.com/dlynnea' target='_blank' rel='noopener noreferrer'>
                                         <i className='fab fa-github fa-2x' />
+                                    </a>
+                                    <a href='https://medium.com/@danimatton' target='_blank' rel='noopener noreferrer'>
+                                    <i class="fab fa-medium-m"></i>
                                     </a>
                                 </div>
                             </div>

@@ -1,0 +1,61 @@
+.toolbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 66px;
+
+    .toolbar-nav {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            li {
+                color: #fff;
+                padding: 0 0.5rem;
+                
+                &:hover, &:active {
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .brand-name {
+        font-size: 22px;
+        font-weight: 600;
+        color: $background;
+        border: 5px solid $background;
+        padding: 6px;
+        font-family: 'Caveat', cursive;
+        border-radius: 7px;
+        left: 0;
+        bottom: 0;
+    
+        &:hover {
+          transform: rotateY(360deg);
+          transition: all 2s ease;
+        }
+        
+        .logo {
+          text-transform: lowercase;
+        }
+    
+        a {
+          transform: rotateY(-45deg);
+          font-size: 22px;
+          font-weight: 600;
+          color: $dark-text;
+          text-transform: uppercase;
+          position: relative;
+          text-decoration: none;
+        }
+    }
+}
