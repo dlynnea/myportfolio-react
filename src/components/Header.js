@@ -2,13 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import DrawerToggleButton from './SideDrawer/DrawerToggle';
 
-export function Header() {
+export function Header(props) {
 
     return (
         <header className="toolbar">
             <nav className="toolbar-nav">
                 <div>
-                    <DrawerToggleButton />
+                    <DrawerToggleButton click={props.drawerToggleClickHandler} />
                 </div>
                 <div className="brand-name">
                     <Link className="logo" to="/">D /M</Link>
