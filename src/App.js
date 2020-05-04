@@ -9,11 +9,16 @@ import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
+import SideDrawer from './components/SideDrawer/SideDrawer';
+import Backdrop from './components/Backdrop/Backdrop';
 
 function App() {
   return (
+    <div style={{height: '100%'}}>
       <Router>
         <Header />
+        <SideDrawer />
+        <Backdrop />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
@@ -24,6 +29,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
+      </div>
   );
 }
 

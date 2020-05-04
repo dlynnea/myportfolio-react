@@ -1,19 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import DrawerToggleButton from './SideDrawer/DrawerToggle';
 
 export function Header() {
-
-    const handleClick = () => {
-        console.log("click")
-    }
 
     return (
         <header className="toolbar">
             <nav className="toolbar-nav">
-                <div></div>
+                <div>
+                    <DrawerToggleButton />
+                </div>
                 <div className="brand-name">
                     <Link className="logo" to="/">D /M</Link>
                 </div>
+                <div className="spacer"></div>
                 <div className="navbar">
                      <ul>
                          <li>
