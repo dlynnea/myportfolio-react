@@ -5,6 +5,20 @@
     }
 }
 
+@media (min-width: 768px) {
+    .sidedrawer {
+        display: none;
+    }
+
+    .toolbar-toggle-button {
+        display: none;
+    }
+
+    div.brand-name {
+        margin-left: 0;
+    }
+}
+
 @media(max-width: 767px){
     header {
         padding: 15px;
@@ -12,40 +26,41 @@
         background-color: #fff;
         border: none;
 
+        div.navbar {
+            display: none;
+        }
+
         .brand-name a {
             color: #000;
         }
-
-        .hamburger .fa {
-            display: inline-block;
-        }
-
-        div.navbar {
-            position: absolute;
-            background-color: #fff;
-            width: 100%;
-            left: 0;
-            top: 60px;
-            padding: 15px;
-            border-top: 1px solid #eee;
-            // display: none;
-
-            ul li {
-                display: block;
-                margin-left: 0;
-
-                a {
-                    line-height: 42px;
-
-                    &:hover {
-                        font-size: 1rem;
-                    }
-
-                    &::before {
-                        display: none;
-                    }
-                }
-            }
-        }
     }
 }
+
+    //     div.navbar {
+    //         position: absolute;
+    //         background-color: #fff;
+    //         width: 100%;
+    //         left: 0;
+    //         top: 60px;
+    //         padding: 15px;
+    //         border-top: 1px solid #eee;
+
+    //         ul li {
+    //             display: block;
+    //             margin-left: 0;
+
+    //             a {
+    //                 line-height: 42px;
+
+    //                 &:hover {
+    //                     font-size: 1rem;
+    //                 }
+
+    //                 &::before {
+    //                     display: none;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+// }

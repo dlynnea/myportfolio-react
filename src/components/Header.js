@@ -7,15 +7,12 @@ export function Header(props) {
     return (
         <header className="toolbar">
             <nav className="toolbar-nav">
-                <div>
-                    <DrawerToggleButton click={props.drawerToggleClickHandler} />
-                </div>
                 <div className="brand-name">
                     <Link className="logo" to="/">D /M</Link>
                 </div>
                 <div className="spacer"></div>
                 <div className="navbar">
-                     <ul>
+                    <ul>
                          <li>
                              <Link to="/">Home</Link>
                          </li>
@@ -35,7 +32,10 @@ export function Header(props) {
                              <Link to="/contact">Contact</Link>
                          </li>
                      </ul>
-                     </div>
+                </div>
+                <div className="toolbar-toggle-button">
+                    <DrawerToggleButton click={props.drawerToggleClickHandler} />
+                </div>
             </nav>
         </header>
 
