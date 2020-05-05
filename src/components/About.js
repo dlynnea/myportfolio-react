@@ -15,7 +15,7 @@ export default function About() {
                     <div className="about-content">
                         <div className="row">
                         <div className="img">
-                            <img className="img" src={aboutMe} alt="about-me" />
+                            <img src={aboutMe} alt="about-me" />
                         </div>
                             <div className="text">
                                 <h4>Hello.</h4>

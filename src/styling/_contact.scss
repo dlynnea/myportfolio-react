@@ -82,8 +82,9 @@
                 box-shadow: 0 10px 15px $para-text;
     
                 &:hover {
-                    background-color: $dark-text;
+                    // background-color: $dark-text;
                     color: $light-text;
+                    box-shadow: none;
                 }
             }
         }

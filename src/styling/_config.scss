@@ -23,6 +23,10 @@ $success: #81cebe;
 
 $off-white: rgb(252, 250, 249);
 
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
 /* utilities */
 
 .text-center {

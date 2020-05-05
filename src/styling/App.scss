@@ -6,7 +6,6 @@
 @import 'blogs';
 @import 'contact';
 @import 'resume';
-@import 'mobile';
 @import 'header';
 @import 'sidedrawer';
 @import 'backdrop';
@@ -36,20 +35,6 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
-}
-
-.hamburger .fa {
-  font-size: 30px;
-  height: 30px;
-  width: 35px;
-  background-color: #fff;
-  color: #000;
-  border-radius: 3px;
-  line-height: 30px;
-  text-align: center;
-  cursor: pointer;
-  display: none;
-  border: 1px solid #eee;
 }
 
 header {
@@ -299,3 +284,4 @@ footer {
 }
 
 
+@import 'mobile';

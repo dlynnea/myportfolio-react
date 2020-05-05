@@ -8,7 +8,13 @@
     border: none;
     padding: 0;
     box-sizing: border-box;
-    margin: 1rem 0;
+    // margin: 1rem;
+    // position: absolute;
+    z-index: 300;
+    right: 35px;
+    // top: 35px;
+    cursor: pointer;
+    @include easeOut;
 
     &:focus {
         outline: none;
@@ -18,6 +24,27 @@
         width: 30px;
         height: 3px;
         background: $background;
+        margin: 0 0 5px 0;
+        @include easeOut;
+    }
+
+    &.close {
+        transform: rotate(180deg);
+
+        .toggle-button-line {
+            // line 1 - rotate
+            &:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            // line 2 - hide
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            // line 3 - roate
+            &:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+        }
     }
 }
 .sidedrawer.open {
@@ -32,8 +59,8 @@
     top: 0;
     // left: 0;
     right: 0;
-    width: 70%;
-    max-width: 300px;
+    width: 44%;
+    max-width: 240px;
     z-index: 200;
     transform: translateX(100%);
     transition: transform 0.3s ease-out;
@@ -43,18 +70,22 @@
         list-style: none;
         display: flex;
         flex-direction: column;
+        // justify-content: center;
         justify-content: center;
         
         li {
-            margin: 0.5rem 0;
+            margin: 1rem;
             
             a {
                 color: $background;
                 text-decoration: none;
-                font-size: 2rem;
+                font-size: 1.6rem;
                 
                 &:hover, &:active {
                     color: $accent-text;
+
+                    position: relative;
+                    right: -5px;
                 }
             }
         }

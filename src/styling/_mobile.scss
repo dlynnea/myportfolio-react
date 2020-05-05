@@ -5,7 +5,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .sidedrawer {
         display: none;
     }
@@ -19,7 +19,15 @@
     }
 }
 
-@media(max-width: 767px){
+@media(max-width: 768px){
+    .home .home-content .block h1{
+        font-size: 40px;
+    }
+
+    .home .home-content .block h3{
+        font-size: 25px;
+    }
+
     header {
         padding: 15px;
         position: fixed;
@@ -28,39 +36,58 @@
 
         div.navbar {
             display: none;
+
+            // position: absolute;
+            // background-color: #fff;
+            // width: 100%;
+            // left: 0;
+            // top: 60px;
+            // padding: 15px;
+            // border-top: 1px solid #eee;
         }
 
         .brand-name a {
             color: #000;
         }
     }
+
+    .about .about-content {
+        margin: 0 20px;
+    }
+
+    .about .text {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0px;
+    }
+
+    .about img.img {
+        flex: 0 0 100%;
+        max-width: 84%;
+    }
+
+    .resume .resume-content {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .resume .img {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
-    //     div.navbar {
-    //         position: absolute;
-    //         background-color: #fff;
-    //         width: 100%;
-    //         left: 0;
-    //         top: 60px;
-    //         padding: 15px;
-    //         border-top: 1px solid #eee;
+@media(max-width: 500px){
+    .home .home-content .block h1{
+        font-size: 30px;
+    }
 
-    //         ul li {
-    //             display: block;
-    //             margin-left: 0;
+    .home .home-content .block h3{
+        font-size: 25px;
+    }
 
-    //             a {
-    //                 line-height: 42px;
-
-    //                 &:hover {
-    //                     font-size: 1rem;
-    //                 }
-
-    //                 &::before {
-    //                     display: none;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-// }
+    .home .home-content .block {
+        padding-left: 20px;
+    }
+}

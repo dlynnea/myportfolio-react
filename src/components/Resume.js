@@ -61,7 +61,6 @@ class Resume extends Component {
                             </div>
                                 <div className="section-title">
                                     <h1>Professional Skills</h1>
-                                    {/* <p>I design and develop services for customers specializing in creating stylish, modern websites</p> */}
                                 </div>
                             </div>
                             <div className="row">
