@@ -20,11 +20,11 @@
 
 @media(max-width: 768px) {
 
-    .home .home-content .block h1{
+    .home .home-content .block h1 {
         font-size: 40px;
     }
 
-    .home .home-content .block h3{
+    .home .home-content .block h3 {
         font-size: 25px;
     }
 
@@ -111,17 +111,21 @@
         display: none;
     }
 
-    .home .home-content .block h1{
-        font-size: 30px;
+    .home .home-content .block h1 {
+        font-size: 34px;
     }
 
-    .home .home-content .block h3{
-        font-size: 25px;
+    .home .home-content .block h3 {
+        font-size: 20px;
+    }
+
+    .about .about-content .text h6 {
+        margin-bottom: 14px;
     }
 
     .home .home-content .block {
         padding-left: 20px;
-        margin-top: 180px;
+        margin-top: 240px;
     }
 
     .portfolio .portfolio-gallery .item {

@@ -113,7 +113,7 @@ class Portfolio extends Component {
                                     <div className="overlay">
                                         <h5>{item.subtitle}</h5>
                                         <h4>{item.title}</h4>
-                                        <a href={item.link} target="_blank" className="project-link">View Project</a>
+                                        <a href={item.link} target="_blank" rel="noopener noreferrer" className="project-link">View Project</a>
                                     </div>
                                     {/* {item.selected && <LightBox title={item.title} subtitle={item.subtitle} link={item.link}/>} */}
                                 </div>
