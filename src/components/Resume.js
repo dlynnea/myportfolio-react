@@ -51,14 +51,14 @@ class Resume extends Component {
                     <div className="row align-items-center">
                         <div className="resume-content">
                             <div className="row">
-                            <div className="resume-content">
+                            {/* <div className="resume-content"> */}
                                 <div className="block">
                                     <h3>Currently Open to new Opportunities</h3>
                                     <div className="cv-btn">
                                         <a href={PDF} target="_blank" rel="noopener noreferrer">Download Resume <i class="fas fa-long-arrow-alt-down"></i></a>
                                     </div>
                                 </div>
-                            </div>
+                            {/* </div> */}
                                 <div className="section-title">
                                     <h1>Professional Skills</h1>
                                 </div>

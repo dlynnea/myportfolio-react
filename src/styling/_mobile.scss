@@ -19,7 +19,8 @@
     }
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
+
     .home .home-content .block h1{
         font-size: 40px;
     }
@@ -69,16 +70,28 @@
     .resume .resume-content {
         flex: 0 0 100%;
         max-width: 100%;
-        padding-left: 0;
+        padding-right: 0;
     }
 
     .resume .img {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
+    .portfolio .portfolio-gallery .item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        position: relative;
+        padding: 8px;
+    }
 }
 
 @media(max-width: 500px){
+
+    h1::before {
+        display: none;
+    }
+    
     .home .home-content .block h1{
         font-size: 30px;
     }
@@ -89,5 +102,12 @@
 
     .home .home-content .block {
         padding-left: 20px;
+    }
+
+    .portfolio .portfolio-gallery .item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        position: relative;
+        padding: 8px;
     }
 }
