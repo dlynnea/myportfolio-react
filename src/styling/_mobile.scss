@@ -64,7 +64,7 @@
 
     .about img.img {
         flex: 0 0 100%;
-        max-width: 84%;
+        max-width: 80%;
     }
 
     .resume .resume-content {
@@ -84,6 +84,26 @@
         position: relative;
         padding: 8px;
     }
+
+    .blogs .blogs-content .box {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .contact .contact-form {
+        padding: 40px 20px;
+
+        .col-6 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .about-me .about-content .text .info .list p {
+        margin: 0;
+        flex: 0 0 100%;
+    }
 }
 
 @media(max-width: 500px){
@@ -91,7 +111,7 @@
     h1::before {
         display: none;
     }
-    
+
     .home .home-content .block h1{
         font-size: 30px;
     }
