@@ -1,4 +1,3 @@
-
 @media(max-width: 991px){
     .home .home-content .block h1 {
         font-size: 50px;
@@ -63,7 +62,7 @@
     }
 
     .about img.img {
-        flex: 0 0 100%;
+        flex: 0 0 80%;
         max-width: 80%;
     }
 
@@ -122,6 +121,7 @@
 
     .home .home-content .block {
         padding-left: 20px;
+        margin-top: 180px;
     }
 
     .portfolio .portfolio-gallery .item {
