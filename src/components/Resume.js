@@ -47,39 +47,39 @@ class Resume extends Component {
     render() {
         return (
             <div className="resume">
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="resume-content">
-                            <div className="row opportunity-row">
-                                <div className="block">
-                                    <h3>Currently Open to new Opportunities</h3>
-                                    <div className="cv-btn">
-                                        <a href={PDF} target="_blank" rel="noopener noreferrer">Download Resume <i class="fas fa-long-arrow-alt-down"></i></a>
+            <div className="container">
+                <div className="row align-items-center">
+                    <div className="resume-content">
+                        {/* <div className="row opportunity-row"> */}
+                            {/* <div className="block">
+                                <h3>Currently Open to new Opportunities</h3>
+                                <div className="cv-btn">
+                                    <a href={PDF} target="_blank" rel="noopener noreferrer">Download Resume <i class="fas fa-long-arrow-alt-down"></i></a>
+                                </div>
+                            </div> */}
+                        {/* </div> */}
+                        <div className="section-title">
+                            <h1>Professional Skills</h1>
+                        </div>
+                        <div className="row">
+                        {this.state.skills.map(skill => (
+                            <div key={skill.id} className="skill-box">
+                                <h6>{skill.tech}</h6>
+                                <div className="skill-bar">
+                                    <div className="skill-bar-in" style={{width: skill.level}}>
+                                        <span>{skill.level}</span>
                                     </div>
                                 </div>
                             </div>
-                            <div className="section-title">
-                                <h1>Professional Skills</h1>
-                            </div>
-                            <div className="row">
-                            {this.state.skills.map(skill => (
-                                <div key={skill.id} className="skill-box">
-                                    <h6>{skill.tech}</h6>
-                                    <div className="skill-bar">
-                                        <div className="skill-bar-in" style={{width: skill.level}}>
-                                            <span>{skill.level}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                            </div>
+                        ))}
                         </div>
-                        <div className="img">
-                            <img src={skills} alt="skills" />
-                        </div>
+                    </div>
+                    <div className="img">
+                        <img src={skills} alt="skills" />
                     </div>
                 </div>
             </div>
+        </div>
         )
     }
 };

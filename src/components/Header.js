@@ -25,9 +25,9 @@ export function Header(props) {
                          <li>
                              <Link to="/blogs">Blogs</Link>
                          </li>
-                         <li>
+                         {/* <li>
                              <Link to="/resume">Resume</Link>
-                         </li>
+                         </li> */}
                          <li>
                              <Link to="/contact">Contact</Link>
                          </li>
