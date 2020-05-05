@@ -16,7 +16,7 @@ export default function About() {
                     <div className="text">
                         <h4>Good Afternoon.</h4>
                         <h6>I'm Danielle, a <span>Software Engineer</span> based in <span>Colorado</span></h6>
-                        <p>I'm a full-stack web developer with an instinct for design. I enjoy writing clean code and then obsessing over colors, shapes and position.</p>
+                        <p>I'm a full-stack web developer with an instinct for design. I enjoy writing clean code and obsessing over colors, shapes and position.</p>
                         <div className="info">
                             <div className="list">
                                 <label>As a developer I love...</label>
@@ -25,25 +25,25 @@ export default function About() {
                             <label>In my spare time I love...</label>
                             </div>
                             <div className="list">
-                                <p><i class="fas fa-code"></i> The relief of finding your bug days later</p>
+                                <p><i class="fas fa-code"></i> Learning something new, everyday!</p>
                             </div>
                             <div className="list">
                                 <p><i class="far fa-heart"></i> Pottery, Painting, Curation, Design</p>
                             </div>
                             <div className="list">
-                                <p> <i class="fas fa-code"></i> Learning new technologies, languages</p>
+                                <p> <i class="fas fa-code"></i> Being a creative outlet</p>
                                 </div>
                             <div className="list">
                                 <p><i class="far fa-heart"></i> Spending time in the mountains, camping, hiking</p>
                             </div>
                             <div className="list">
-                                <p><i class="fas fa-code"></i> Playing with the user interface</p>
+                                <p><i class="fas fa-code"></i> Design and implementation</p>
                             </div>
                             <div className="list">
                                 <p><i class="far fa-heart"></i> Traveling, learning new languages and culture</p>
                             </div>
                             <div className="list">
-                                <p><i class="fas fa-code"></i> Learning new technologies, languages</p>
+                                <p><i class="fas fa-code"></i> Solving problems</p>
                             </div>
                             <div className="list">
                                 <p><i class="far fa-heart"></i> Traveling, learning new languages and culture</p>
@@ -61,6 +61,8 @@ export default function About() {
                             </a>
                             <a href='https://github.com/dlynnea' target='_blank' rel='noopener noreferrer'>
                                 <i className='fab fa-github fa-2x' />
+                            </a><a href='https://medium.com/@danimatton' target='_blank' rel='noopener noreferrer'>
+                                 <i class="fab fa-medium-m"></i>
                             </a>
                         </div>
                     </div>

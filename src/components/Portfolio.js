@@ -15,6 +15,7 @@ class Portfolio extends Component {
                 id: 0,
                 title: 'Curator',
                 subtitle: 'Content Aggregator',
+                summary: 'Built using Ruby, Rails with React and React-Redux for state management. I wrote web crawlers using Python and the Scrapy framework to implement sources of news from several different sources. SQL Database.',
                 img: curator,
                 link: 'https://github.com/dlynnea/curator-frontend',
                 selected: false
@@ -23,6 +24,7 @@ class Portfolio extends Component {
                 id: 1,
                 title: 'DotJoin',
                 subtitle: 'Social Network Application',
+                summary: 'Built with NodeJS, Express and React. I utilized React-Redux and Hooks for state management, using a MongoDB database.',
                 img: dotJoin,
                 link: 'https://github.com/dlynnea/dot-join',
                 selected: false
@@ -31,34 +33,35 @@ class Portfolio extends Component {
                 id: 2,
                 title: 'Craft Chat',
                 subtitle: 'Chatroom Application',
+                summary: 'Built with NodeJS, Express and vanilla JavaScript. Utilized the socket.io library to create real-time, event-based communication.',
                 img: craft,
                 link: 'https://github.com/dlynnea/chatroom',
                 selected: false
             },
-            {
-                id: 3,
-                title: 'title',
-                subtitle: 'fashion',
-                img: three,
-                link: '',
-                selected: false
-            },
-            {
-                id: 4,
-                title: 'title',
-                subtitle: 'branding',
-                img: one,
-                link: '',
-                selected: false
-            },
-            {
-                id: 5,
-                title: 'title',
-                subtitle: 'fashion',
-                img: three,
-                link: '',
-                selected: false
-            },
+            // {
+            //     id: 3,
+            //     title: 'title',
+            //     subtitle: 'fashion',
+            //     img: three,
+            //     link: '',
+            //     selected: false
+            // },
+            // {
+            //     id: 4,
+            //     title: 'title',
+            //     subtitle: 'branding',
+            //     img: one,
+            //     link: '',
+            //     selected: false
+            // },
+            // {
+            //     id: 5,
+            //     title: 'title',
+            //     subtitle: 'fashion',
+            //     img: three,
+            //     link: '',
+            //     selected: false
+            // },
         ]
     };
 
@@ -115,8 +118,8 @@ class Portfolio extends Component {
                                         <h4>{item.title}</h4>
                                         <a href={item.link} target="_blank" rel="noopener noreferrer" className="project-link">View Project</a>
                                     </div>
-                                    {/* {item.selected && <LightBox title={item.title} subtitle={item.subtitle} link={item.link}/>} */}
                                 </div>
+                                <p>{item.summary}</p>
                             </div>
                             ))}
                         </div>
