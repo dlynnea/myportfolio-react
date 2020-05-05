@@ -143,4 +143,21 @@
             margin-top: 1.2rem;
         }
     }
+
+    footer {
+        .row {
+            flex-direction: column;
+        }
+
+        .social {
+            text-align: center;
+            margin-top: -12px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: -12px;
+        }
+    }
 }
