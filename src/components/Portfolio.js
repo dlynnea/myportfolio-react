@@ -104,7 +104,7 @@ class Portfolio extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="section-title text-center">
-                            <h1>My Recent Projects</h1>
+                            <h1>Latest Projects</h1>
                         </div>
                     </div>
                     <div className="row">
