@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import one from '../images/img1.jpg';
-import three from '../images/img3.jpg';
 import LightBox from './LightBox';
 import craft from '../images/craft.png';
 import dotJoin from '../images/dotJoin.png';

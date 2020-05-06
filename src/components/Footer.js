@@ -20,7 +20,7 @@ export default function Footer() {
                             <i className='fab fa-github' />
                         </a>
                         <a href='https://medium.com/@danimatton' target='_blank' rel='noopener noreferrer'>
-                            <i class="fab fa-medium-m"></i>
+                            <i className="fab fa-medium-m"></i>
                         </a>
                     </div>
                     <div className="logo">

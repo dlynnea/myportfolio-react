@@ -17,7 +17,7 @@ export function Header(props) {
                              <Link to="/">Home</Link>
                          </li>
                          <li>
-                             <Link to="/about"><a href="#about">About</a></Link>
+                             <Link to="/about">About</Link>
                          </li>
                          <li>
                              <Link to="/portfolio">Portfolio</Link>

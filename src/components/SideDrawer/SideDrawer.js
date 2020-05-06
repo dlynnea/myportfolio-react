@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import DrawerToggleButton from './DrawerToggle';
 
 const SideDrawer = props => {
     let drawerClasses = 'sidedrawer';
@@ -14,7 +13,7 @@ const SideDrawer = props => {
                     <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/about"><a href="#about">About</a></Link>
+                    <Link to="/about">About</Link>
                 </li>
                 <li>
                     <Link to="/portfolio">Portfolio</Link>

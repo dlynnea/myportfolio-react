@@ -1,7 +1,20 @@
 import React from 'react'
 import aboutMe from '../images/about2.JPG';
+import moment from 'moment';
 
 export default function About() {
+
+    let greetingText;
+    const now = moment();
+    const currentHour = now.hour();
+    if ( currentHour < 12 ) {
+        greetingText = 'Good morning.';
+      } else if ( currentHour < 18 ) {
+        greetingText = 'Good afternoon.';
+      } else {
+        greetingText = 'Good evening.';
+      }
+
     return (
         <div className="about" id="about">
         <div className="container">
@@ -14,7 +27,7 @@ export default function About() {
             </div>
                 <div className="about-content">
                     <div className="text">
-                        <h4>Good Afternoon.</h4>
+                        <h4>{greetingText}</h4>
                         <h6>I'm Danielle, a <span>Software Engineer</span> based in <span>Colorado</span></h6>
                         <p>I'm a full-stack web developer with an instinct for design. I enjoy writing clean code and obsessing over colors, shapes and position.</p>
                         <div className="info">
@@ -25,28 +38,28 @@ export default function About() {
                             <label>In my spare time I love...</label>
                             </div>
                             <div className="list">
-                                <p><i class="fas fa-code"></i> Learning something new, everyday!</p>
+                                <p><i className="fas fa-code"></i> Learning something new, everyday!</p>
                             </div>
                             <div className="list">
-                                <p><i class="far fa-heart"></i> Pottery, Painting, Curation, Design</p>
+                                <p><i className="far fa-heart"></i> Pottery, Painting, Curation, Design</p>
                             </div>
                             <div className="list">
-                                <p> <i class="fas fa-code"></i> Being a creative outlet</p>
+                                <p> <i className="fas fa-code"></i> Being a creative outlet</p>
                                 </div>
                             <div className="list">
-                                <p><i class="far fa-heart"></i> Spending time in the mountains, camping, hiking</p>
+                                <p><i className="far fa-heart"></i> Spending time in the mountains, camping, hiking</p>
                             </div>
                             <div className="list">
-                                <p><i class="fas fa-code"></i> Design and implementation</p>
+                                <p><i className="fas fa-code"></i> Design and implementation</p>
                             </div>
                             <div className="list">
-                                <p><i class="far fa-heart"></i> Traveling, learning new languages and culture</p>
+                                <p><i className="far fa-heart"></i> Traveling, learning new languages and culture</p>
                             </div>
                             <div className="list">
-                                <p><i class="fas fa-code"></i> Solving problems</p>
+                                <p><i className="fas fa-code"></i> Solving problems</p>
                             </div>
                             <div className="list">
-                                <p><i class="far fa-heart"></i> Traveling, learning new languages and culture</p>
+                                <p><i className="far fa-heart"></i> Music, music culture, live shows</p>
                             </div>
                         </div>
                         <div className="social-links">
@@ -62,7 +75,7 @@ export default function About() {
                             <a href='https://github.com/dlynnea' target='_blank' rel='noopener noreferrer'>
                                 <i className='fab fa-github fa-2x' />
                             </a><a href='https://medium.com/@danimatton' target='_blank' rel='noopener noreferrer'>
-                                 <i class="fab fa-medium-m"></i>
+                                 <i className="fab fa-medium-m"></i>
                             </a>
                         </div>
                     </div>
