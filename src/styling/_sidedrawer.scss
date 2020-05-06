@@ -32,23 +32,32 @@
 
 .sidedrawer {
     height: 100%;
-    background-color: #fff;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    background-color: $off-white;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     right: 0;
-    width: 44%;
+    width: 40%;
     max-width: 240px;
     z-index: 200;
     transform: translateX(100%);
     transition: transform 0.3s ease-out;
+
+    .fas {
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-end;
+        padding: 18px 18px 0 0;
+        color: $background;
+        font-size: 1.4rem;
+    }
     
     ul {
         height: 100%;
         list-style: none;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        margin-top: 3rem;
         
         li {
             margin: 1rem;

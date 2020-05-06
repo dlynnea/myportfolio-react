@@ -29,7 +29,12 @@ export default function About() {
                     <div className="text">
                         <h4>{greetingText}</h4>
                         <h6>I'm Danielle, a <span>Software Engineer</span> based in <span>Colorado</span></h6>
-                        <p>I'm a full-stack web developer with an instinct for design. I enjoy writing clean code and obsessing over colors, shapes and position.</p>
+                        <p>I'm a full-stack web developer with an instinct for design. 
+                            I enjoy writing clean code and obsessing over colors, shapes 
+                            and position. I don't like to define myself by the work I've done, 
+                            but by the work I <span><strong>want</strong></span> to do. I am always learning, 
+                            and I enjoy being challenged and engaging with projects that 
+                            require me to step outside of my comfort zone.</p>
                         <div className="info">
                             <div className="list">
                                 <label>As a developer I love...</label>
@@ -38,28 +43,28 @@ export default function About() {
                             <label>In my spare time I love...</label>
                             </div>
                             <div className="list">
-                                <p><i className="fas fa-code"></i> Learning something new, everyday!</p>
+                                <p><span><i className="fas fa-code"></i></span> Learning something new, everyday!</p>
                             </div>
                             <div className="list">
-                                <p><i className="far fa-heart"></i> Pottery, Painting, Curation, Design</p>
+                                <p><span><i className="far fa-heart"></i></span> Pottery, Painting, Curation, Design</p>
                             </div>
                             <div className="list">
-                                <p> <i className="fas fa-code"></i> Being a creative outlet</p>
+                                <p><span><i className="fas fa-code"></i></span> Being a creative outlet</p>
                                 </div>
                             <div className="list">
-                                <p><i className="far fa-heart"></i> Spending time in the mountains, camping, hiking</p>
+                                <p><span><i className="far fa-heart"></i></span> Spending time in the mountains, camping, hiking</p>
                             </div>
                             <div className="list">
-                                <p><i className="fas fa-code"></i> Design and implementation</p>
+                                <p><span><i className="fas fa-code"></i></span> Design and implementation</p>
                             </div>
                             <div className="list">
-                                <p><i className="far fa-heart"></i> Traveling, learning new languages and culture</p>
+                                <p><span><i className="far fa-heart"></i></span> Traveling, learning new languages and culture</p>
                             </div>
                             <div className="list">
-                                <p><i className="fas fa-code"></i> Solving problems</p>
+                                <p><span><i className="fas fa-code"></i></span> Solving problems</p>
                             </div>
                             <div className="list">
-                                <p><i className="far fa-heart"></i> Music, music culture, live shows</p>
+                                <p><span><i className="far fa-heart"></i></span> Music, music culture, live shows</p>
                             </div>
                         </div>
                         <div className="social-links">

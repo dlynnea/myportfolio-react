@@ -6,8 +6,10 @@ const SideDrawer = props => {
     if (props.show) {
         drawerClasses = 'sidedrawer open';
     }
+
     return (
         <nav className={drawerClasses}>
+            <span><i onClick={props.click} className="fas fa-times"></i></span>
             <ul>
                 <li>
                     <Link to="/">Home</Link>

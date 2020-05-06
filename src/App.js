@@ -24,7 +24,7 @@ class App extends Component {
     });
   };
 
-  backdropClickHandler = () => {
+  closeDrawerClickHandler = () => {
     this.setState({sideDrawerOpen: false})
   }
 
@@ -34,13 +34,13 @@ class App extends Component {
 
     if (this.state.sideDrawerOpen) {
       sideDrawer = <SideDrawer />;
-      backdrop = <Backdrop click={this.backdropClickHandler} />;
+      backdrop = <Backdrop click={this.closeDrawerClickHandler} />;
     }
     return (
       <div style={{height: '100%'}}>
         <Router>
           <Header drawerToggleClickHandler={this.drawerToggleClickHandler} />
-          <SideDrawer show={this.state.sideDrawerOpen} />
+          <SideDrawer show={this.state.sideDrawerOpen} click={this.closeDrawerClickHandler}/>
           {backdrop}
           <Switch>
             <Route exact path='/' component={Home} />
