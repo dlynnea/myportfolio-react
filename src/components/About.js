@@ -49,19 +49,19 @@ export default function About() {
                                 <p><span><i className="far fa-heart"></i></span> Pottery, Painting, Curation, Design</p>
                             </div>
                             <div className="list">
-                                <p><span><i className="fas fa-code"></i></span> It's a creative outlet</p>
+                                <p><span><i className="fas fa-code"></i></span> Creating what comes to mind</p>
                                 </div>
                             <div className="list">
-                                <p><span><i className="far fa-heart"></i></span> Music, music culture, live shows</p>
+                                <p><span><i className="far fa-heart"></i></span> Music, live shows, music culture</p>
                             </div>
                             <div className="list">
-                                <p><span><i className="fas fa-code"></i></span> Planning, design and implementation</p>
+                                <p><span><i className="fas fa-code"></i></span> Planning, system design and implementation</p>
                             </div>
                             <div className="list">
                                 <p><span><i className="far fa-heart"></i></span> Traveling, learning new languages and culture</p>
                             </div>
                             <div className="list">
-                                <p><span><i className="fas fa-code"></i></span> Creative problem solving</p>
+                                <p><span><i className="fas fa-code"></i></span> The ability to turn an idea into a product</p>
                             </div>
                             <div className="list">
                                 <p><span><i className="far fa-heart"></i></span> Spending time in the mountains, camping, hiking</p>
