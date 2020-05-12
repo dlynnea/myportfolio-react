@@ -49,22 +49,22 @@ export default function About() {
                                 <p><span><i className="far fa-heart"></i></span> Pottery, Painting, Curation, Design</p>
                             </div>
                             <div className="list">
-                                <p><span><i className="fas fa-code"></i></span> Being a creative outlet</p>
+                                <p><span><i className="fas fa-code"></i></span> It's a creative outlet</p>
                                 </div>
                             <div className="list">
-                                <p><span><i className="far fa-heart"></i></span> Spending time in the mountains, camping, hiking</p>
+                                <p><span><i className="far fa-heart"></i></span> Music, music culture, live shows</p>
                             </div>
                             <div className="list">
-                                <p><span><i className="fas fa-code"></i></span> Design and implementation</p>
+                                <p><span><i className="fas fa-code"></i></span> Planning, design and implementation</p>
                             </div>
                             <div className="list">
                                 <p><span><i className="far fa-heart"></i></span> Traveling, learning new languages and culture</p>
                             </div>
                             <div className="list">
-                                <p><span><i className="fas fa-code"></i></span> Solving problems</p>
+                                <p><span><i className="fas fa-code"></i></span> Creative problem solving</p>
                             </div>
                             <div className="list">
-                                <p><span><i className="far fa-heart"></i></span> Music, music culture, live shows</p>
+                                <p><span><i className="far fa-heart"></i></span> Spending time in the mountains, camping, hiking</p>
                             </div>
                         </div>
                         <div className="social-links">
