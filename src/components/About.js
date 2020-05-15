@@ -53,13 +53,13 @@ export default function About() {
                                 <p><span><i className="fas fa-code"></i></span> Creating what comes to mind</p>
                                 </div>
                             <div className="list">
-                                <p><span><i className="far fa-heart"></i></span> Music, live shows, music culture</p>
+                                <p><span><i className="far fa-heart"></i></span> Music, live shows, the music culture</p>
                             </div>
                             <div className="list">
                                 <p><span><i className="fas fa-code"></i></span> Planning, system design and implementation</p>
                             </div>
                             <div className="list">
-                                <p><span><i className="far fa-heart"></i></span> Traveling, learning new languages and culture</p>
+                                <p><span><i className="far fa-heart"></i></span> Traveling, new language and culture, the unfamiliar</p>
                             </div>
                             <div className="list">
                                 <p><span><i className="fas fa-code"></i></span> The ability to turn an idea into a product</p>
