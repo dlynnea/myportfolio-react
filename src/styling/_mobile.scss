@@ -86,8 +86,15 @@
 
     .blogs .blogs-content .box {
         flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 40px;
+        max-width: 80%;
+        margin: 24px;
+
+        .img {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 
     .contact .contact-form {
