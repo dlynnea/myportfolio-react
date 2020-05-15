@@ -1,16 +1,13 @@
 .contact {
     padding: 100px 18px;
 
-    .section-title h1:before {
-        left: 30%;
-    }
-
     .contact-form {
         background-color: $background-light;
         flex: 0 0 100%;
         max-width: 100%;
         padding: 50px;
         border: 1px solid #eee;
+        box-shadow: 0px 1px 3px $background-dark-light;
         
         .text {
             flex: 0 0 100%;
@@ -49,7 +46,6 @@
         }
 
         .form-control {
-            // height: 45px;
             width: 100%;
             margin-bottom: 15px;
             border: 1px solid #eee;
@@ -79,10 +75,10 @@
                 transition: all .8s ease;
                 background-color: $accent-text;
                 text-decoration: none;
-                box-shadow: 0 10px 15px $para-text;
+                box-shadow: 1px 3px 7px $para-text;
     
                 &:hover {
-                    // background-color: $dark-text;
+                    cursor: pointer;
                     color: $light-text;
                     box-shadow: none;
                 }
