@@ -43,7 +43,7 @@ export default function About() {
                             <label>In my spare time I love...</label>
                             </div>
                             <div className="list">
-                                <p><span><i className="fas fa-code"></i></span> Learning something new, everyday!</p>
+                                <p><span><i className="fas fa-code"></i></span> Constantly learning new technologies & techniques</p>
                             </div>
                             <div className="list">
                                 <p><span><i className="far fa-heart"></i></span> Pottery, Painting, Curation, Design</p>
