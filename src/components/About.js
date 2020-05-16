@@ -1,10 +1,5 @@
 import React from 'react'
-// import aboutMe from '../images/about2.JPG';
-// import aboutMe from '../images/new.JPG';
-// import aboutMe from '../images/ne.JPG';
-// import aboutMe from '../images/bw.JPG';
 import aboutMe from '../images/color.JPG';
-// import aboutMe from '../images/newnew.JPG';
 import moment from 'moment';
 
 export default function About() {
