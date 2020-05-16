@@ -36,30 +36,6 @@ class Portfolio extends Component {
                 link: 'https://github.com/dlynnea/chatroom',
                 selected: false
             },
-            // {
-            //     id: 3,
-            //     title: 'title',
-            //     subtitle: 'fashion',
-            //     img: three,
-            //     link: '',
-            //     selected: false
-            // },
-            // {
-            //     id: 4,
-            //     title: 'title',
-            //     subtitle: 'branding',
-            //     img: one,
-            //     link: '',
-            //     selected: false
-            // },
-            // {
-            //     id: 5,
-            //     title: 'title',
-            //     subtitle: 'fashion',
-            //     img: three,
-            //     link: '',
-            //     selected: false
-            // },
         ]
     };
 
