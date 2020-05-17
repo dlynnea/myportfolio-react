@@ -44,7 +44,8 @@ header {
   border-bottom: 1px solid $background-light;
   padding: 10px 15px;
   z-index: 11;
-  background-color: $background-light;
+  // background-color: $background-light;
+  background-color: $light-text;
   color: $color-text;
 
   .row {
@@ -197,11 +198,11 @@ header {
       }
 
       h3 {
-        color: $light-text;
         font-size: 25px;
         font-weight: 500;
         margin: 0;
         padding: 0;
+        color: rgb(177, 175, 175);
       }      
     }
   }
