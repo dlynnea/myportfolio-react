@@ -65,6 +65,16 @@ class Blogs extends Component {
             },
             {
                 id: 5,
+                title: 'Back to some JavaScript Basics',
+                subtitle: 'JavaScript',
+                summary: 'A brief look into JavaScript functions, understanding scope, and how to use the .bind(), .call() and .apply() methods.',
+                img: database,
+                date: '17 May 2020',
+                link: 'https://medium.com/@danimatton/back-to-some-javascript-basics-3e49fe948515',
+                selected: false
+            },
+            {
+                id: 5,
                 title: 'Forms & FormData',
                 subtitle: 'JavaScript',
                 summary: 'Traditionally, a form was the only way to send data, in which the client had entered, back to the server. <form> is an HTML tag that allows you to perform GET / POST / UPDATE / DELETE, etc. operations without writing any code in JavaScript or server-side, in fact forms were designed for a pre-JavaScript Web.',
