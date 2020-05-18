@@ -68,7 +68,7 @@ class Blogs extends Component {
                 title: 'Back to some JavaScript Basics',
                 subtitle: 'JavaScript',
                 summary: 'A brief look into JavaScript functions, understanding scope, and how to use the .bind(), .call() and .apply() methods.',
-                img: database,
+                img: js,
                 date: '17 May 2020',
                 link: 'https://medium.com/@danimatton/back-to-some-javascript-basics-3e49fe948515',
                 selected: false
