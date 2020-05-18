@@ -6,6 +6,7 @@ import architecture from '../images/architecture.jpg';
 import sockets from '../images/sockets.jpg';
 import form from '../images/form.jpeg';
 import jwt from '../images/jwt.jpg';
+import js from '../images/js.jpeg';
 import nodejwt from '../images/node-jwt.jpeg';
 
 class Blogs extends Component {
