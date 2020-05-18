@@ -7,7 +7,6 @@ import sockets from '../images/sockets.jpg';
 import form from '../images/form.jpeg';
 import jwt from '../images/jwt.jpg';
 import js from '../images/js.jpeg';
-import nodejwt from '../images/node-jwt.jpeg';
 
 class Blogs extends Component {
 
@@ -18,7 +17,7 @@ class Blogs extends Component {
                 title: 'JWT Implementation for Node.js',
                 subtitle: 'Node.js, JWT',
                 summary: 'An abbreviated example of including JWT authentication within your Node API. It should give you an idea of how to protect your routes, get a token and then how to use that token to access the protected routes.',
-                img: nodejwt,
+                img: jwt,
                 date: '7 May 2020',
                 link: 'https://medium.com/@danimatton/jwt-implementation-for-node-js-cca3d64b6b50',
                 selected: false
