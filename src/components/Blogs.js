@@ -7,6 +7,7 @@ import sockets from '../images/sockets.jpg';
 import form from '../images/form.jpeg';
 import jwt from '../images/jwt.jpg';
 import js from '../images/js.jpeg';
+import js3 from '../images/js3.jpeg';
 
 class Blogs extends Component {
 
@@ -67,7 +68,7 @@ class Blogs extends Component {
                 title: 'Back to some JavaScript Basics, Part II',
                 subtitle: 'JavaScript',
                 summary: 'A brief look into JavaScript hoisting, callback functions, and closures.',
-                img: js,
+                img: js3,
                 date: '18 March 2020',
                 link: 'https://medium.com/@danimatton/back-to-some-javascript-basics-part-ii-c2f72f464a0a',
                 selected: false
