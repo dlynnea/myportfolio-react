@@ -8,6 +8,7 @@ import form from '../images/form.jpeg';
 import jwt from '../images/jwt.jpg';
 import js from '../images/js.jpeg';
 import js3 from '../images/js3.jpeg';
+import js2 from '../images/js2.jpeg';
 
 class Blogs extends Component {
 
