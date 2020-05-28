@@ -1,5 +1,5 @@
 import React from 'react';
-import PDF from './Danielle-Matton.pdf';
+import PDF from './DMresume.pdf';
 
 export const Home = () => {
     return (
