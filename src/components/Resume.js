@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import skills from '../images/skills.jpg';
-import PDF from './Danielle-Matton.pdf';
+import PDF from './DMresume.pdf';
 
 class Resume extends Component {
 
