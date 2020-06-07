@@ -9,6 +9,7 @@ import jwt from '../images/jwt.jpg';
 import js from '../images/js.jpeg';
 import js3 from '../images/js3.jpeg';
 import js4 from '../images/js4.jpg';
+import js5 from '../images/js5.jpg';
 
 class Blogs extends Component {
 
@@ -66,6 +67,16 @@ class Blogs extends Component {
             },
             {
                 id: 5,
+                title: 'Back to some JavaScript Basics, Part IV',
+                subtitle: 'JavaScript',
+                summary: 'Getting familiar with the most common array helper methods in JavaScript, as well as a run through on recursive functions',
+                img: js5,
+                date: '7 June 2020',
+                link: 'https://medium.com/@danimatton/back-to-some-javascript-basics-part-iv-6604009c0ca5',
+                selected: false
+            },
+            {
+                id: 6,
                 title: 'Back to some JavaScript Basics, Part III',
                 subtitle: 'JavaScript',
                 summary: 'A brief look into JavaScript promises, prototypal inheritance, and classical inheritance',
@@ -75,7 +86,7 @@ class Blogs extends Component {
                 selected: false
             },
             {
-                id: 6,
+                id: 7,
                 title: 'Back to some JavaScript Basics, Part II',
                 subtitle: 'JavaScript',
                 summary: 'A brief look into JavaScript hoisting, callback functions, and closures.',
@@ -85,7 +96,7 @@ class Blogs extends Component {
                 selected: false
             },
             {
-                id: 7,
+                id: 8,
                 title: 'Back to some JavaScript Basics',
                 subtitle: 'JavaScript',
                 summary: 'A brief look into JavaScript functions, understanding scope, and how to use the .bind(), .call() and .apply() methods.',
@@ -95,7 +106,7 @@ class Blogs extends Component {
                 selected: false
             },
             {
-                id: 8,
+                id: 9,
                 title: 'Forms & FormData',
                 subtitle: 'JavaScript',
                 summary: 'Traditionally, a form was the only way to send data, in which the client had entered, back to the server. <form> is an HTML tag that allows you to perform GET / POST / UPDATE / DELETE, etc. operations without writing any code in JavaScript or server-side, in fact forms were designed for a pre-JavaScript Web.',
@@ -105,7 +116,7 @@ class Blogs extends Component {
                 selected: false
             },
             {
-                id: 9,
+                id: 10,
                 title: 'HTTP & MVC Architecture',
                 subtitle: 'Ruby on Rails',
                 summary: 'MVC separates an application into three components. The Models for handling data and business logic, the Controllers for handling the user interface and application, and Views for handling graphical user interface objects and presentation.',
