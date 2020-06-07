@@ -8,7 +8,7 @@ export function Header(props) {
         <header className="toolbar">
             <nav className="toolbar-nav">
                 <div className="brand-name">
-                    <Link className="logo" to="/">D <span className="logo-span">/</span>M</Link>
+                    <Link className="logo" to="/">D /M</Link>
                 </div>
                 <div className="spacer"></div>
                 <div className="navbar">
