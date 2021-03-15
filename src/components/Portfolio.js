@@ -3,6 +3,7 @@ import LightBox from './LightBox';
 import craft from '../images/craft.png';
 import dotJoin from '../images/dotJoin.png';
 import curator from '../images/curator.png';
+import todo from '../images/todo.png';
 
 class Portfolio extends Component {
 
@@ -34,6 +35,15 @@ class Portfolio extends Component {
                 summary: 'Built with NodeJS, Express and vanilla JavaScript. Utilized the socket.io library to create real-time, event-based communication.',
                 img: craft,
                 link: 'https://github.com/dlynnea/chatroom',
+                selected: false
+            },
+            {
+                id: 3,
+                title: 'Task List',
+                subtitle: 'To-Do List Application',
+                summary: 'Built with ClojureSctipt, Reagent and Shadow CLJS with vanilla CSS fro styling. A fun and experimental, purely front end application built while learning ClojureScript and Reagent',
+                img: todo,
+                link: 'https://github.com/dlynnea/SeH-todo-app',
                 selected: false
             },
         ]
